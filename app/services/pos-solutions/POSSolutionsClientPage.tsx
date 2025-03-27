@@ -11,7 +11,7 @@ import { CheckCircle, Zap, Scale, LineChart, X } from "lucide-react"
 // Placeholder for screenshots
 const screenshots = [
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/dashboard.jpeg?height=600&width=800",
     alt: "Polaris Dashboard",
     caption: "Real-time business insights with an intuitive dashboard.",
   },
@@ -302,13 +302,13 @@ export default function POSSolutionsClientPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {screenshots.map((screenshot, index) => (
               <div key={index} className="cursor-pointer group" onClick={() => openModal(index)}>
-                <div className="relative overflow-hidden rounded-lg shadow-md">
+                <div className="relative overflow-hidden rounded-lg shadow-md aspect-[4/3]">
                   <Image
                     src={screenshot.src || "/placeholder.svg"}
                     alt={screenshot.alt}
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <span className="text-white font-medium">View Larger</span>
@@ -321,8 +321,8 @@ export default function POSSolutionsClientPage() {
 
           {/* Image Modal */}
           {modalOpen && (
-            <div className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm flex items-center justify-center p-4">
-              <div className="relative bg-background rounded-lg shadow-xl max-w-4xl w-full">
+            <div className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-auto">
+              <div className="relative bg-background rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col">
                 <button
                   onClick={closeModal}
                   className="absolute right-4 top-4 z-10 rounded-full bg-primary/10 p-1 text-primary hover:bg-primary/20"
@@ -330,14 +330,16 @@ export default function POSSolutionsClientPage() {
                   <X className="h-6 w-6" />
                 </button>
 
-                <div className="p-6">
-                  <Image
-                    src={screenshots[currentImageIndex].src || "/placeholder.svg"}
-                    alt={screenshots[currentImageIndex].alt}
-                    width={1200}
-                    height={800}
-                    className="w-full h-auto rounded-md"
-                  />
+                <div className="p-6 overflow-auto">
+                  <div className="relative">
+                    <Image
+                      src={screenshots[currentImageIndex].src || "/placeholder.svg"}
+                      alt={screenshots[currentImageIndex].alt}
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto rounded-md object-contain max-h-[70vh]"
+                    />
+                  </div>
                   <p className="mt-4 text-center text-lg">{screenshots[currentImageIndex].caption}</p>
 
                   <div className="flex justify-between mt-4">
