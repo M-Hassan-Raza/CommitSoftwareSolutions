@@ -60,7 +60,23 @@ const DesignToolIcon = ({ tech }) => {
           "InVision": faInvision,
           "Dribbble": faDribbble,
           "Behance": faBehance,
-          "Procreate": faBehance // Using Behance icon as placeholder
+     }
+
+     const getIconColor = (tech) => {
+          const colorMap = {
+               "Adobe Photoshop": "#31A8FF",
+               "Adobe Illustrator": "#FF9A00",
+               "Adobe InDesign": "#FF3366",
+               "Adobe XD": "#FF61F6",
+               "Adobe After Effects": "#9999FF",
+               "Figma": "#F24E1E",
+               "Sketch": "#F7B500",
+               "InVision": "#FF3366",
+               "Dribbble": "#EA4C89",
+               "Behance": "#1769FF",
+          }
+
+          return colorMap[tech] || "#000000"
      }
 
      return (
@@ -362,7 +378,6 @@ export default function GraphicDesignPage() {
                                    "InVision",
                                    "Dribbble",
                                    "Behance",
-                                   "Procreate"
                               ].map((tech, index) => (
                                    <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-shadow">
                                         <CardContent className="p-4 text-center">
