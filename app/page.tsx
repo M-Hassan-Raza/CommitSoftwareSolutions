@@ -251,16 +251,15 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Commit Software transformed our business operations with their automation solutions. Their team was
-                  professional, responsive, and delivered exactly what we needed."
+                  "Polaris transformed how we manage our retail stores. Errors are down, and efficiency is up! The inventory management system has been a game-changer for tracking stock across multiple locations in real-time."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
-                    <span className="font-medium text-primary">JD</span>
+                    <span className="font-medium text-primary">UG</span>
                   </div>
                   <div>
-                    <p className="font-medium">Jane Doe</p>
-                    <p className="text-sm text-muted-foreground">CEO, TechCorp</p>
+                    <p className="font-medium">Usman Ghany</p>
+                    <p className="text-sm text-muted-foreground">Retail Store Owner, Hassan Traders</p>
                   </div>
                 </div>
               </CardContent>
@@ -285,16 +284,15 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "The web application Commit Software built for us has significantly improved our customer engagement.
-                  Their attention to detail and focus on user experience was impressive."
+                  "Managing suppliers and sales used to be a nightmare. Polaris saved us hours every week. The supplier management module has streamlined our ordering process, and the reporting features give us insights we never had before."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
-                    <span className="font-medium text-primary">MS</span>
+                    <span className="font-medium text-primary">MI</span>
                   </div>
                   <div>
-                    <p className="font-medium">Michael Smith</p>
-                    <p className="text-sm text-muted-foreground">Marketing Director, Retail Solutions</p>
+                    <p className="font-medium">Muhammad Inam</p>
+                    <p className="text-sm text-muted-foreground">Wholesale Manager, Hassan Traders</p>
                   </div>
                 </div>
               </CardContent>
@@ -319,16 +317,15 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "Working with Commit Software on our cloud migration was seamless. Their expertise saved us time and
-                  money while improving our system's performance and reliability."
+                  "The financial reporting capabilities of Commit Software's POS system have made my job significantly easier. Month-end reconciliation that used to take days now takes hours. I can't be any more satisfied."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
-                    <span className="font-medium text-primary">AJ</span>
+                    <span className="font-medium text-primary">HM</span>
                   </div>
                   <div>
-                    <p className="font-medium">Alex Johnson</p>
-                    <p className="text-sm text-muted-foreground">CTO, FinTech Innovations</p>
+                    <p className="font-medium">Hassan Mahmood</p>
+                    <p className="text-sm text-muted-foreground">Finance Manager, Citywide Pharmacy</p>
                   </div>
                 </div>
               </CardContent>
