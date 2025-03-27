@@ -31,22 +31,22 @@ const screenshots = [
     caption: "Never run out of things with real-time inventory tracking.",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/generate_order.jpeg?height=600&width=800",
     alt: "Generate Order",
     caption: "Quickly create orders for your suppliers.",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/refunds.jpeg?height=600&width=800",
     alt: "Returns Management",
     caption: "Minimize errors with an automated returns process.",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/customer_record.jpeg?height=600&width=800",
     alt: "Customer Record",
     caption: "Keep detailed records of all your customers.",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/customer_ledger.jpeg?height=600&width=800",
     alt: "Customer Ledger",
     caption: "Track transactions and manage customer balances easily.",
   },
