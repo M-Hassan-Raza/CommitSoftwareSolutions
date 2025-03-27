@@ -108,7 +108,7 @@ export default function POSSolutionsClientPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/POS_Hero.jpg?height=600&width=800"
                 alt="Polaris Interface"
                 width={800}
                 height={600}
