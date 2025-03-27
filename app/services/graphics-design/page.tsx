@@ -106,7 +106,7 @@ export default function GraphicDesignPage() {
                               </div>
                               <div className="relative">
                                    <Image
-                                        src="/placeholder.svg?height=600&width=800"
+                                        src="/graphics.jpg?height=600&width=800"
                                         alt="Graphic Design"
                                         width={800}
                                         height={600}
@@ -444,7 +444,7 @@ export default function GraphicDesignPage() {
 
                               <div className="relative">
                                    <Image
-                                        src="/placeholder.svg?height=600&width=800"
+                                        src="/whygraphics.jpg?height=600&width=800"
                                         alt="Graphic Design Benefits"
                                         width={800}
                                         height={600}
