@@ -109,7 +109,7 @@ export default function Header() {
                   <div
                     className={cn(
                       "absolute left-0 mt-2 w-48 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5 transition-all",
-                      activeDropdown === item.name || (!isMobile && "group-hover:block") ? "block" : "hidden",
+                      isMobile ? (activeDropdown === item.name ? "block" : "hidden") : "hidden group-hover:block",
                     )}
                   >
                     <div className="py-1">
