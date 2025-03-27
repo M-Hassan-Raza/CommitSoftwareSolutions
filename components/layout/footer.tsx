@@ -101,40 +101,13 @@ export default function Footer() {
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary"
-                >
-                  <span className="sr-only">Twitter</span>
-                  <Twitter className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/company/commit-software-solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary"
                 >
                   <span className="sr-only">LinkedIn</span>
                   <Linkedin className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary"
-                >
-                  <span className="sr-only">Facebook</span>
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary"
-                >
-                  <span className="sr-only">Instagram</span>
-                  <Instagram className="h-5 w-5" />
                 </a>
               </div>
             </address>
