@@ -23,6 +23,7 @@ const navItems = [
       { name: "POS Solutions", href: "/services/pos-solutions" },
     ],
   },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ]
