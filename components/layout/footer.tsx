@@ -94,7 +94,7 @@ export default function Footer() {
               </p>
               <p className="text-sm text-muted-foreground mb-4">
                 <a href="mailto:info@commitsoftware.com" className="hover:text-primary">
-                  info@commitsoftware.com
+                  info@commitsoftware.dev
                 </a>
               </p>
               <div className="flex space-x-4">
