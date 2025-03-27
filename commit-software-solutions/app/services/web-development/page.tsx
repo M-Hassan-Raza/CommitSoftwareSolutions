@@ -413,7 +413,7 @@ export default function WebDevelopmentPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground hover:bg-primary-foreground hover:text-primary text-primary"
                 asChild
               >
                 <Link href="/services">Explore Other Services</Link>

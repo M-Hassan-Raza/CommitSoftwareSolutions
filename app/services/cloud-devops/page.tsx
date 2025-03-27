@@ -446,7 +446,7 @@ export default function CloudDevOpsPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground hover:bg-primary-foreground hover:text-primary text-primary-foreground"
+                className="border-primary-foreground hover:bg-primary-foreground hover:text-primary text-primary-foreground text-primary"
                 asChild
               >
                 <Link href="/services">Explore Other Services</Link>

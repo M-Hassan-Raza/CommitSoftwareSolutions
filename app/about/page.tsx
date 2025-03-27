@@ -310,7 +310,7 @@ export default function AboutPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  className="border-primary-foreground hover:bg-primary-foreground hover:text-primary text-primary"
                   asChild
                 >
                   <Link href="/services">Our Services</Link>
