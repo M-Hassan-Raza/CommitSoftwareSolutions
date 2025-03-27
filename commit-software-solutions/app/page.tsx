@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="mb-4 bg-primary/10 p-3 rounded-full w-fit">
                   <Palette className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">UI/UX Design</h3>
+                <h3 className="text-xl font-bold mb-2">Graphics Design</h3>
                 <p className="text-muted-foreground mb-4">
                   Craft intuitive, engaging user experiences with creative and functional design solutions.
                 </p>

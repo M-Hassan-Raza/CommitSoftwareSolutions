@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services/ui-ux-design" className="text-sm text-muted-foreground hover:text-primary">
-                  UI/UX Design
+                  Graphics Design
                 </Link>
               </li>
               <li>

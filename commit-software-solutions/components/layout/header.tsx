@@ -20,7 +20,7 @@ const navItems = [
       { name: "Business Automations", href: "/services/business-automations" },
       { name: "Cloud & DevOps", href: "/services/cloud-devops" },
       { name: "Web Development", href: "/services/web-development" },
-      { name: "UI/UX Design", href: "/services/ui-ux-design" },
+      { name: "Graphics Design", href: "/services/ui-ux-design" },
       { name: "POS Solutions", href: "/services/pos-solutions" },
     ],
   },

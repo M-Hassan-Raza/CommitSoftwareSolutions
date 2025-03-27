@@ -58,7 +58,7 @@ A static-first frontend application built with Next.js (App Router), leveraging 
     *   Smart and Effortless Business Automations
     *   Cloud Deployment & DevOps Solutions
     *   Modern Web Development (Frontend & Backend)
-    *   Creative Graphics & UI/UX Designing
+    *   Creative Graphics & Graphics Designing
     *   Custom Intelligent POS Solutions
     *   *(Consider adding: Mobile App Development? Data Analytics?)*
 *   **About Page:** Company story, mission, vision, core values, team introduction (optional: photos, roles).
