@@ -67,8 +67,8 @@ export default function Header() {
     >
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center justify-start">
-          <Link href="/" className="flex items-center -mr-4"> {/* Adjust gap-x-2 as needed (e.g., gap-x-1, gap-x-3) */}
-            <div className="relative h-14 w-14">
+          <Link href="/" className="flex items-center -mr-4">
+            <div className="relative h-12 w-12">
               <Image
                 src={logo}
                 alt="Commit Software Solutions Logo"
@@ -76,7 +76,7 @@ export default function Header() {
                 className="object-contain"
               />
             </div>
-            <div className="flex flex-col justify-center h-16 -ml-4"> {/* Ensure vertical alignment is good */}
+            <div className="flex flex-col justify-center h-12 -ml-4"> {/* Ensure vertical alignment is good */}
               <span className="font-bold text-l text-primary leading-tight">Commit</span>
               <span className="font-bold text-l text-primary leading-tight -mt-0.5">Software</span>
               <span className="font-bold text-l text-primary leading-tight -mt-0.5">Solutions</span>
@@ -113,9 +113,11 @@ export default function Header() {
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                   </button>
+                  {/* Add an invisible bridge element to maintain hover state */}
+                  <div className="absolute h-2 w-full left-0 top-full" />
                   <div
                     className={cn(
-                      "absolute left-0 mt-2 w-48 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5 transition-all",
+                      "absolute left-0 top-[calc(100%+0.5rem)] w-48 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5 transition-all",
                       isMobile ? (activeDropdown === item.name ? "block" : "hidden") : "hidden group-hover:block",
                     )}
                   >
