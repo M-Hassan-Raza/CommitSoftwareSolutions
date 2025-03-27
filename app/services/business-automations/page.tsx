@@ -414,7 +414,7 @@ export default function BusinessAutomationsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/whyautomation.jpeg?height=600&width=800"
                 alt="Business Automation Benefits"
                 width={800}
                 height={600}
