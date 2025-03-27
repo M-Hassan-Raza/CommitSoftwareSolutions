@@ -83,15 +83,13 @@ export default function Footer() {
             <h3 className="text-lg font-medium mb-4">Contact</h3>
             <address className="not-italic">
               <p className="text-sm text-muted-foreground mb-2">
-                123 Tech Park Avenue
+                Lahore
                 <br />
-                Suite 456
-                <br />
-                San Francisco, CA 94103
+                Punjab, 55000
               </p>
               <p className="text-sm text-muted-foreground mb-2">
-                <a href="tel:+14155550123" className="hover:text-primary">
-                  (415) 555-0123
+                <a href="tel:+923350706014" className="hover:text-primary">
+                  (92) 335-0706014
                 </a>
               </p>
               <p className="text-sm text-muted-foreground mb-4">
