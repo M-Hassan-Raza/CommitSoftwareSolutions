@@ -369,7 +369,7 @@ export default function WebDevelopmentPage() {
                     <FontAwesomeIcon
                       icon={getTechIcon(tech)}
                       style={{ color: getIconColor(tech) }}
-                      className="text-7xl" 
+                      className="text-7xl"
                     />
                   </div>
                   <p className="font-medium">{tech}</p> {/* Changed font-large to font-medium */}
@@ -462,7 +462,7 @@ export default function WebDevelopmentPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground text-primary hover:bg-primary-foreground hover:text-primary"
                 asChild
               >
                 <Link href="/services">Explore Other Services</Link>
