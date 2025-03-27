@@ -16,17 +16,17 @@ const screenshots = [
     caption: "Real-time business insights with an intuitive dashboard.",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/edit_product.jpeg?height=600&width=800",
     alt: "Editing a Product",
     caption: "Edit an existing product with great control",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/product_database.jpeg?height=600&width=800",
     alt: "Product Database",
     caption: "Manage products, units, and pricing efficiently.",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
+    src: "/low_inventory.jpeg?height=600&width=800",
     alt: "Low Inventory",
     caption: "Never run out of things with real-time inventory tracking.",
   },
