@@ -9,7 +9,7 @@ const serviceIcons = {
      "business-automations": <Zap className="h-12 w-12 text-primary" />,
      "cloud-devops": <Cloud className="h-12 w-12 text-primary" />,
      "web-development": <Code className="h-12 w-12 text-primary" />,
-     "ui-ux-design": <Palette className="h-12 w-12 text-primary" />,
+     "graphics-design": <Palette className="h-12 w-12 text-primary" />,
      "pos-solutions": <ShoppingCart className="h-12 w-12 text-primary" />,
 }
 
@@ -52,7 +52,7 @@ export default function ServicesPage() {
                image: "/placeholder.svg?height=400&width=600"
           },
           {
-               id: "ui-ux-design",
+               id: "graphics-design",
                title: "Graphics Design",
                description: "Craft intuitive, engaging user experiences with creative and functional design solutions.",
                bullets: [

@@ -109,7 +109,7 @@ export default function Home() {
                 <p className="text-muted-foreground mb-4">
                   Craft intuitive, engaging user experiences with creative and functional design solutions.
                 </p>
-                <Link href="/services/ui-ux-design" className="group inline-flex items-center text-primary font-medium">
+                <Link href="/services/graphics-design" className="group inline-flex items-center text-primary font-medium">
                   Learn more
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
