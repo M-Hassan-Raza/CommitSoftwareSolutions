@@ -78,7 +78,7 @@ export default function CloudDevOpsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/cloud.jpg?height=600&width=800"
                 alt="Cloud and DevOps"
                 width={800}
                 height={600}
@@ -420,7 +420,7 @@ export default function CloudDevOpsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/whycloud.jpg?height=600&width=800"
                 alt="Cloud & DevOps Benefits"
                 width={800}
                 height={600}
