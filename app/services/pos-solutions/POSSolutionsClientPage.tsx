@@ -203,7 +203,7 @@ export default function POSSolutionsClientPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/inventory_tracking.jpg?height=600&width=800"
                     alt="Inventory Management"
                     width={800}
                     height={600}
@@ -242,7 +242,7 @@ export default function POSSolutionsClientPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/sales_tracking.jpg?height=600&width=800"
                     alt="Sales & Finance"
                     width={800}
                     height={600}
@@ -281,7 +281,7 @@ export default function POSSolutionsClientPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/security.jpg?height=600&width=800"
                     alt="Security & Users"
                     width={800}
                     height={600}
