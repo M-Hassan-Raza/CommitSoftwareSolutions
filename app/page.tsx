@@ -335,7 +335,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Client Logos */}
+      {/* Client Logos
       <section className="py-12 md:py-16">
         <div className="container">
           <div className="text-center mb-8">
@@ -355,7 +355,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
@@ -374,7 +374,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground hover:bg-primary-foreground text-primary hover:text-primary"
                 asChild
               >
                 <Link href="/services">Explore Services</Link>
