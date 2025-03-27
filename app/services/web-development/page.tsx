@@ -3,6 +3,22 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle } from "lucide-react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import {
+  faReact,
+  faVuejs,
+  faNodeJs,
+  faPython,
+  faJs,
+  faGithub,
+  faAws,
+  faDigitalOcean,
+  faDocker
+} from "@fortawesome/free-brands-svg-icons"
+// Prevents Font Awesome from adding its CSS since we'll handle it
+import "@fortawesome/fontawesome-svg-core/styles.css"
+config.autoAddCss = false
 
 export const metadata = {
   title: "Web Development Services",
@@ -11,6 +27,42 @@ export const metadata = {
 }
 
 export default function WebDevelopmentPage() {
+  // Add this function to map technology names to Font Awesome icons
+  const getTechIcon = (tech) => {
+    const iconMap = {
+      "React": faReact,
+      "Next.js": faReact, // Next.js uses React icon since there's no specific one
+      "Vue": faVuejs,
+      "Node.js": faNodeJs,
+      "Django": faPython,
+      "Express": faJs,
+      "MongoDB": faGithub, // Using GitHub as placeholder (no MongoDB icon)
+      "PostgreSQL": faGithub, // Using GitHub as placeholder
+      "DigitalOcean": faDigitalOcean,
+      "AWS": faAws,
+      "Docker": faDocker
+    }
+
+    return iconMap[tech] || faGithub // Default to GitHub icon if not found
+  }
+
+  const getIconColor = (tech) => {
+    const colorMap = {
+      "React": "#61DAFB",
+      "Next.js": "#000000",
+      "Vue": "#4FC08D",
+      "Node.js": "#339933",
+      "Django": "#092E20",
+      "Express": "#000000",
+      "MongoDB": "#47A248",
+      "PostgreSQL": "#336791",
+      "DigitalOcean": "#0080FF",
+      "AWS": "#FF9900",
+      "Docker": "#2496ED"
+    }
+
+    return colorMap[tech] || "#000000"
+  }
   return (
     <>
       {/* Hero Section */}
@@ -302,28 +354,25 @@ export default function WebDevelopmentPage() {
               "React",
               "Next.js",
               "Vue",
-              "Angular",
               "Node.js",
-              "Python",
-              "PHP",
-              "Laravel",
+              "Django",
               "Express",
               "MongoDB",
               "PostgreSQL",
+              "DigitalOcean",
               "AWS",
+              "Docker"
             ].map((tech, index) => (
-              <Card key={index} className="border-0 shadow-sm">
+              <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-4 text-center">
-                  <div className="h-16 flex items-center justify-center mb-2">
-                    <Image
-                      src={`/placeholder.svg?height=60&width=60`}
-                      alt={tech}
-                      width={60}
-                      height={60}
-                      className="h-12 w-auto object-contain"
+                  <div className="h-24 flex items-center justify-center mb-2"> {/* Keep container size */}
+                    <FontAwesomeIcon
+                      icon={getTechIcon(tech)}
+                      style={{ color: getIconColor(tech) }}
+                      className="text-7xl" 
                     />
                   </div>
-                  <p className="font-medium">{tech}</p>
+                  <p className="font-medium">{tech}</p> {/* Changed font-large to font-medium */}
                 </CardContent>
               </Card>
             ))}
