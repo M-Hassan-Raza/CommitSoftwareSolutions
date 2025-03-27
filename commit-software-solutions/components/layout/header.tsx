@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
+import logo from '@/public/
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -66,9 +67,7 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center space-x-2">
             <div className="relative h-10 w-10">
-              <svg viewBox="0 0 100 100" className="h-10 w-10">
-                <path d="M50 0 L50 100 M25 25 L50 0 L75 25" fill="none" stroke="hsl(var(--accent))" strokeWidth="8" />
-              </svg>
+              <img src="">
             </div>
             <div>
               <span className="font-bold text-xl text-primary">Commit</span>

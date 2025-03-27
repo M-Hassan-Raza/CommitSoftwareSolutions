@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
+import logo from '@/public/logo-simplified.png'
+import Image from "next/image"
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -64,16 +66,20 @@ export default function Header() {
       )}
     >
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="relative h-10 w-10">
-              <svg viewBox="0 0 100 100" className="h-10 w-10">
-                <path d="M50 0 L50 100 M25 25 L50 0 L75 25" fill="none" stroke="hsl(var(--accent))" strokeWidth="8" />
-              </svg>
+        <div className="flex items-center justify-start">
+          <Link href="/" className="flex items-center -mr-4"> {/* Adjust gap-x-2 as needed (e.g., gap-x-1, gap-x-3) */}
+            <div className="relative h-14 w-14">
+              <Image
+                src={logo}
+                alt="Commit Software Solutions Logo"
+                fill
+                className="object-contain"
+              />
             </div>
-            <div>
-              <span className="font-bold text-xl text-primary">Commit</span>
-              <span className="font-bold text-xl block -mt-1 text-primary">Software</span>
+            <div className="flex flex-col justify-center h-16 -ml-4"> {/* Ensure vertical alignment is good */}
+              <span className="font-bold text-l text-primary leading-tight">Commit</span>
+              <span className="font-bold text-l text-primary leading-tight -mt-0.5">Software</span>
+              <span className="font-bold text-l text-primary leading-tight -mt-0.5">Solutions</span>
             </div>
           </Link>
         </div>
