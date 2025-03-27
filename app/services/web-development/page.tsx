@@ -80,7 +80,7 @@ export default function WebDevelopmentPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/webdev.jpeg?height=600&width=800"
                 alt="Web Development"
                 width={800}
                 height={600}
@@ -436,7 +436,7 @@ export default function WebDevelopmentPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/whywebdev.jpeg?height=600&width=800"
                 alt="Web Development Benefits"
                 width={800}
                 height={600}
