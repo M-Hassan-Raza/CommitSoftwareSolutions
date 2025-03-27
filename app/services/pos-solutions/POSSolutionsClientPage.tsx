@@ -11,42 +11,42 @@ import { CheckCircle, Zap, Scale, LineChart, X } from "lucide-react"
 // Placeholder for screenshots
 const screenshots = [
   {
-    src: "/dashboard.jpeg?height=600&width=800",
+    src: "/dashboard.webp?height=600&width=800",
     alt: "Polaris Dashboard",
     caption: "Real-time business insights with an intuitive dashboard.",
   },
   {
-    src: "/edit_product.jpeg?height=600&width=800",
+    src: "/edit_product.webp?height=600&width=800",
     alt: "Editing a Product",
     caption: "Edit an existing product with great control",
   },
   {
-    src: "/product_database.jpeg?height=600&width=800",
+    src: "/product_database.webp?height=600&width=800",
     alt: "Product Database",
     caption: "Manage products, units, and pricing efficiently.",
   },
   {
-    src: "/low_inventory.jpeg?height=600&width=800",
+    src: "/low_inventory.webp?height=600&width=800",
     alt: "Low Inventory",
     caption: "Never run out of things with real-time inventory tracking.",
   },
   {
-    src: "/generate_order.jpeg?height=600&width=800",
+    src: "/generate_order.webp?height=600&width=800",
     alt: "Generate Order",
     caption: "Quickly create orders for your suppliers.",
   },
   {
-    src: "/refunds.jpeg?height=600&width=800",
+    src: "/refunds.webp?height=600&width=800",
     alt: "Returns Management",
     caption: "Minimize errors with an automated returns process.",
   },
   {
-    src: "/customer_record.jpeg?height=600&width=800",
+    src: "/customer_record.webp?height=600&width=800",
     alt: "Customer Record",
     caption: "Keep detailed records of all your customers.",
   },
   {
-    src: "/customer_ledger.jpeg?height=600&width=800",
+    src: "/customer_ledger.webp?height=600&width=800",
     alt: "Customer Ledger",
     caption: "Track transactions and manage customer balances easily.",
   },
@@ -108,7 +108,7 @@ export default function POSSolutionsClientPage() {
             </div>
             <div className="relative">
               <Image
-                src="/POS_Hero.jpg?height=600&width=800"
+                src="/POS_Hero.webp?height=600&width=800"
                 alt="Polaris Interface"
                 width={800}
                 height={600}
@@ -203,7 +203,7 @@ export default function POSSolutionsClientPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/inventory_tracking.jpg?height=600&width=800"
+                    src="/inventory_tracking.webp?height=600&width=800"
                     alt="Inventory Management"
                     width={800}
                     height={600}
@@ -242,7 +242,7 @@ export default function POSSolutionsClientPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/sales_tracking.jpg?height=600&width=800"
+                    src="/sales_tracking.webp?height=600&width=800"
                     alt="Sales & Finance"
                     width={800}
                     height={600}
@@ -281,7 +281,7 @@ export default function POSSolutionsClientPage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/security.jpg?height=600&width=800"
+                    src="/security.webp?height=600&width=800"
                     alt="Security & Users"
                     width={800}
                     height={600}

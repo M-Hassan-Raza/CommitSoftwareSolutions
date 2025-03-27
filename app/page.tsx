@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Zap, Cloud, Code, Palette, ShoppingCart, CheckCircle, ArrowRight } from "lucide-react"
-import whyUsImg from "@/public/whyus.jpeg"
+import whyUsImg from "@/public/whyus.webp"
 
 export default function Home() {
   return (
@@ -206,7 +206,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/whyus.jpeg?height=600&width=800"
+                  src="/whyus.webp?height=600&width=800"
                   alt="Team collaboration"
                   width={800}
                   height={600}
