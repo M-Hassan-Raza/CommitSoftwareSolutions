@@ -77,7 +77,7 @@ export default function BusinessAutomationsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/automation.jpeg?height=600&width=800"
                 alt="Business Automation"
                 width={800}
                 height={600}
