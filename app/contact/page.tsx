@@ -120,7 +120,7 @@ export default function ContactPage() {
               </li>
               <li className="flex items-start">
                 <span className="font-medium mr-2">•</span>
-                <span>ChronoPOS implementation and customization</span>
+                <span>Polaris implementation and customization</span>
               </li>
               <li className="flex items-start">
                 <span className="font-medium mr-2">•</span>
@@ -156,7 +156,7 @@ export default function ContactPage() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2">What technologies do you specialize in?</h3>
-            <p>I specialize in full-stack development with Vue.js, Django, Next.js, and PostgreSQL. For point-of-sale solutions, I've developed ChronoPOS using modern cloud-based technologies.</p>
+            <p>I specialize in full-stack development with Vue.js, Django, Next.js, and PostgreSQL. For point-of-sale solutions, I've developed Polaris using modern cloud-based technologies.</p>
           </div>
         </div>
       </div>

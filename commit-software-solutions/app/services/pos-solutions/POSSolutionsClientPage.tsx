@@ -12,7 +12,7 @@ import { CheckCircle, Zap, Scale, LineChart, X } from "lucide-react"
 const screenshots = [
   {
     src: "/placeholder.svg?height=600&width=800",
-    alt: "ChronoPOS Dashboard",
+    alt: "Polaris Dashboard",
     caption: "Real-time business insights with an intuitive dashboard.",
   },
   {
@@ -80,7 +80,7 @@ export default function POSSolutionsClientPage() {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Revolutionize Your Business with ChronoPOS</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Revolutionize Your Business with Polaris</h1>
               <p className="text-xl opacity-90 mb-8">
                 The All-in-One POS System Built for Speed, Security, and Scalability
               </p>
@@ -109,7 +109,7 @@ export default function POSSolutionsClientPage() {
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=600&width=800"
-                alt="ChronoPOS Interface"
+                alt="Polaris Interface"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-xl"
@@ -119,10 +119,10 @@ export default function POSSolutionsClientPage() {
         </div>
       </section>
 
-      {/* Why ChronoPOS */}
+      {/* Why Polaris */}
       <section className="py-16 md:py-24">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Why ChronoPOS?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Why Polaris?</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-md hover:shadow-lg transition-shadow">
@@ -408,7 +408,7 @@ export default function POSSolutionsClientPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "ChronoPOS transformed how we manage our retail stores. Errors are down, and efficiency is up!"
+                  "Polaris transformed how we manage our retail stores. Errors are down, and efficiency is up!"
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
@@ -440,7 +440,7 @@ export default function POSSolutionsClientPage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "Managing suppliers and sales used to be a nightmare. ChronoPOS saved us hours every week."
+                  "Managing suppliers and sales used to be a nightmare. Polaris saved us hours every week."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
@@ -539,7 +539,7 @@ export default function POSSolutionsClientPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
             <p className="text-xl opacity-90 mb-8">
-              Join dozens of businesses using ChronoPOS to streamline operations and boost sales.
+              Join dozens of businesses using Polaris to streamline operations and boost sales.
             </p>
             <Button size="lg" variant="secondary" asChild>
               <Link href="/contact">Get Started →</Link>

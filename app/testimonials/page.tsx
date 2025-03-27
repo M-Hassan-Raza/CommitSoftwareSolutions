@@ -19,7 +19,7 @@ const testimonials = [
     industry: "Retail",
     image: "/placeholder.svg?height=300&width=300",
     quote:
-      "ChronoPOS transformed how we manage our retail stores. Errors are down, and efficiency is up! The inventory management system has been a game-changer for us, allowing us to track stock across multiple locations in real-time. Customer checkout times have been reduced by 40%, and our staff training time has been cut in half due to the intuitive interface.",
+      "Polaris transformed how we manage our retail stores. Errors are down, and efficiency is up! The inventory management system has been a game-changer for us, allowing us to track stock across multiple locations in real-time. Customer checkout times have been reduced by 40%, and our staff training time has been cut in half due to the intuitive interface.",
     rating: 5,
     featured: true,
     tags: ["retail", "inventory", "pos"],
@@ -31,7 +31,7 @@ const testimonials = [
     industry: "Distribution",
     image: "/placeholder.svg?height=300&width=300",
     quote:
-      "Managing suppliers and sales used to be a nightmare. ChronoPOS saved us hours every week. The supplier management module has streamlined our ordering process, and the reporting features give us insights we never had before. We've been able to optimize our inventory levels and reduce waste by 25% since implementing the system.",
+      "Managing suppliers and sales used to be a nightmare. Polaris saved us hours every week. The supplier management module has streamlined our ordering process, and the reporting features give us insights we never had before. We've been able to optimize our inventory levels and reduce waste by 25% since implementing the system.",
     rating: 5,
     featured: true,
     tags: ["wholesale", "supply-chain", "reporting"],
@@ -67,7 +67,7 @@ const testimonials = [
     industry: "Fashion",
     image: "/placeholder.svg?height=300&width=300",
     quote:
-      "The customer loyalty program in ChronoPOS has revolutionized our marketing efforts. We've seen repeat business increase by 35% since implementation. The system is also incredibly reliable - we haven't experienced any downtime in over a year of use.",
+      "The customer loyalty program in Polaris has revolutionized our marketing efforts. We've seen repeat business increase by 35% since implementation. The system is also incredibly reliable - we haven't experienced any downtime in over a year of use.",
     rating: 4,
     featured: false,
     tags: ["fashion", "loyalty", "marketing"],
@@ -91,7 +91,7 @@ const testimonials = [
     industry: "Cafe",
     image: "/placeholder.svg?height=300&width=300",
     quote:
-      "As a small cafe owner, I needed an affordable but powerful POS system. ChronoPOS has been perfect - easy to use for my staff, with all the features I need without overwhelming complexity. The customer support has been outstanding whenever I've had questions.",
+      "As a small cafe owner, I needed an affordable but powerful POS system. Polaris has been perfect - easy to use for my staff, with all the features I need without overwhelming complexity. The customer support has been outstanding whenever I've had questions.",
     rating: 5,
     featured: false,
     tags: ["cafe", "small-business", "support"],
@@ -294,7 +294,7 @@ export default function TestimonialsPage() {
                 <div className="mb-4">
                   <h3 className="text-xl font-bold mb-2">Fashion Emporium Success Story</h3>
                   <p className="text-muted-foreground mb-4">
-                    How a multi-location retail chain increased efficiency by 40% with ChronoPOS.
+                    How a multi-location retail chain increased efficiency by 40% with Polaris.
                   </p>
                 </div>
                 <Button variant="outline" className="w-full" asChild>
