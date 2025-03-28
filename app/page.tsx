@@ -367,7 +367,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-primary-foreground backdrop-blur-sm hover:bg-primary-foreground text-primary-foreground hover:text-primary shadow-lg"
+                  className="border-primary-foreground backdrop-blur-sm hover:bg-primary-foreground text-primary-foreground hover:text-primary shadow-lg text-primary"
                   asChild
                 >
                   <Link href="/services">Explore Services</Link>
