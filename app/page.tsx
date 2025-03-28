@@ -133,7 +133,7 @@ export default function Home() {
                     href={service.link}
                     className="group inline-flex items-center text-primary font-medium"
                   >
-                    Learn more
+                    Learn more about {service.title}
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-2" />
                   </Link>
                 </CardContent>
@@ -370,7 +370,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 md:justify-end">
               <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
                 <Button size="lg" variant="secondary" asChild className="shadow-lg">
-                  <Link href="/contact">Get in Touch</Link>
+                  <Link href="/contact">Schedule a Consultation</Link>
                 </Button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}>
@@ -380,7 +380,7 @@ export default function Home() {
                   className="border-primary-foreground backdrop-blur-sm hover:bg-primary-foreground text-primary-foreground hover:text-primary shadow-lg text-primary"
                   asChild
                 >
-                  <Link href="/services">Explore Services</Link>
+                  <Link href="/services">Explore Our Services</Link>
                 </Button>
               </motion.div>
             </div>
