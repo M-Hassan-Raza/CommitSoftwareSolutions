@@ -18,11 +18,31 @@ const navItems = [
     href: "#",
     dropdown: true,
     items: [
-      { name: "Business Automations", href: "/services/business-automations" },
-      { name: "Cloud & DevOps", href: "/services/cloud-devops" },
-      { name: "Web Development", href: "/services/web-development" },
-      { name: "Graphics Design", href: "/services/graphics-design" },
-      { name: "POS Solutions", href: "/services/pos-solutions" },
+      {
+        name: "Business Automations",
+        href: "/services/business-automations",
+        description: "Streamline your workflows with custom business automation solutions"
+      },
+      {
+        name: "Cloud & DevOps",
+        href: "/services/cloud-devops",
+        description: "Accelerate development with modern cloud infrastructure"
+      },
+      {
+        name: "Web Development",
+        href: "/services/web-development",
+        description: "Create powerful web applications and websites"
+      },
+      {
+        name: "Graphics Design",
+        href: "/services/graphics-design",
+        description: "Professional design services for your brand"
+      },
+      {
+        name: "POS Solutions",
+        href: "/services/pos-solutions",
+        description: "Custom point-of-sale systems for your business"
+      },
     ],
   },
   { name: "Testimonials", href: "/testimonials" },
@@ -135,7 +155,12 @@ export default function Header() {
                           )}
                           title={`Learn about our ${subItem.name} services`}
                         >
-                          {subItem.name}
+                          <span className="font-medium">{subItem.name}</span>
+                          {subItem.description && (
+                            <span className="block text-xs text-muted-foreground mt-0.5">
+                              {subItem.description}
+                            </span>
+                          )}
                         </Link>
                       ))}
                     </div>
@@ -221,7 +246,12 @@ export default function Header() {
                             )}
                             title={`Learn about our ${subItem.name} services`}
                           >
-                            {subItem.name}
+                            <span>{subItem.name}</span>
+                            {subItem.description && (
+                              <span className="block text-xs text-muted-foreground mt-0.5">
+                                {subItem.description}
+                              </span>
+                            )}
                           </Link>
                         ))}
                       </div>
