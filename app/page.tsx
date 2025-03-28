@@ -303,20 +303,26 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex justify-center mt-8 gap-2">
+            <div className="flex justify-center mt-8 gap-4">
               <button
-                className="w-3 h-3 rounded-full bg-primary"
+                className="p-4 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
                 aria-label="View testimonial page 1"
                 aria-current="true"
-              ></button>
+              >
+                <span className="block w-3 h-3 rounded-full bg-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+              </button>
               <button
-                className="w-3 h-3 rounded-full bg-primary/30"
+                className="p-4 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
                 aria-label="View testimonial page 2"
-              ></button>
+              >
+                <span className="block w-3 h-3 rounded-full bg-primary/30 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+              </button>
               <button
-                className="w-3 h-3 rounded-full bg-primary/30"
+                className="p-4 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
                 aria-label="View testimonial page 3"
-              ></button>
+              >
+                <span className="block w-3 h-3 rounded-full bg-primary/30 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+              </button>
             </div>
           </div>
         </div>
