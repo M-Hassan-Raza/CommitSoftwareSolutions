@@ -304,9 +304,19 @@ export default function Home() {
             </div>
 
             <div className="flex justify-center mt-8 gap-2">
-              <button className="w-3 h-3 rounded-full bg-primary"></button>
-              <button className="w-3 h-3 rounded-full bg-primary/30"></button>
-              <button className="w-3 h-3 rounded-full bg-primary/30"></button>
+              <button
+                className="w-3 h-3 rounded-full bg-primary"
+                aria-label="View testimonial page 1"
+                aria-current="true"
+              ></button>
+              <button
+                className="w-3 h-3 rounded-full bg-primary/30"
+                aria-label="View testimonial page 2"
+              ></button>
+              <button
+                className="w-3 h-3 rounded-full bg-primary/30"
+                aria-label="View testimonial page 3"
+              ></button>
             </div>
           </div>
         </div>
