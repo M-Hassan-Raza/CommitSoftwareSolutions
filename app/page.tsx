@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Zap, Cloud, Code, Palette, ShoppingCart, CheckCircle, ArrowRight } from "lucide-react"
-import { motion } from "framer-motion" // You'll need to install framer-motion
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -30,15 +30,10 @@ export default function Home() {
                 Powerful Software
               </motion.span>
             </h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7, duration: 0.8 }}
-              className="text-xl md:text-2xl text-muted-foreground mb-8"
-            >
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
               We build innovative digital solutions that help businesses automate, scale, and succeed in the modern
               world.
-            </motion.p>
+            </p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -199,11 +194,13 @@ export default function Home() {
                 className="relative rounded-lg overflow-hidden shadow-xl"
               >
                 <Image
-                  src="/whyus.webp?height=600&width=800"
+                  src="/whyus.webp"
                   alt="Team collaboration"
                   width={800}
                   height={600}
                   className="w-full h-auto object-cover"
+                  priority // Add priority flag for above-the-fold images
+                  quality={80} // Reduce quality slightly
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </motion.div>
