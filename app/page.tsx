@@ -299,7 +299,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-
+{/* 
             <div className="flex justify-center mt-8 gap-4">
               <button
                 className="p-4 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
@@ -320,7 +320,7 @@ export default function Home() {
               >
                 <span className="block w-3 h-3 rounded-full bg-primary/30 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
