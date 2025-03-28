@@ -96,6 +96,8 @@ export default function Header() {
                       "flex items-center text-sm font-medium transition-colors hover:text-primary",
                       pathname.startsWith(`/${item.name.toLowerCase()}`) ? "text-primary" : "text-foreground",
                     )}
+                    aria-expanded={activeDropdown === item.name}
+                    aria-label={`${item.name} menu - click to expand options`}
                   >
                     {item.name}
                     <svg
@@ -109,6 +111,7 @@ export default function Header() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       className="ml-1 h-4 w-4"
+                      aria-hidden="true"
                     >
                       <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
@@ -130,6 +133,7 @@ export default function Header() {
                             "block px-4 py-2 text-sm hover:bg-muted",
                             pathname === subItem.href ? "text-primary font-medium" : "text-foreground",
                           )}
+                          title={`Learn about our ${subItem.name} services`}
                         >
                           {subItem.name}
                         </Link>
@@ -155,7 +159,12 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-4">
           <ThemeToggle />
           <Button asChild>
-            <Link href="/contact">Get a Quote</Link>
+            <Link
+              href="/contact"
+              title="Request a free quote for your project"
+            >
+              Get a Quote
+            </Link>
           </Button>
         </div>
 
@@ -210,6 +219,7 @@ export default function Header() {
                               "block rounded-md py-2 pl-3 pr-4 text-base font-medium hover:bg-muted",
                               pathname === subItem.href ? "text-primary" : "text-foreground",
                             )}
+                            title={`Learn about our ${subItem.name} services`}
                           >
                             {subItem.name}
                           </Link>
