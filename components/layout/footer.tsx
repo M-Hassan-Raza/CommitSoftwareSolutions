@@ -9,7 +9,11 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link href="/" className="flex items-center space-x-2">
+            <Link 
+              href="/" 
+              className="flex items-center space-x-2"
+              aria-label="Commit Software home page"
+            >
               <span className="font-bold text-xl">Commit</span>
               <span className="text-primary font-bold text-xl">Software</span>
             </Link>
@@ -20,8 +24,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-4">Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-medium mb-4" id="services-navigation">Services</h3>
+            <ul className="space-y-2" aria-labelledby="services-navigation">
               <li>
                 <Link
                   href="/services/business-automations"
@@ -54,8 +58,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-4">Company</h3>
-            <ul className="space-y-2">
+            <h3 className="text-lg font-medium mb-4" id="company-navigation">Company</h3>
+            <ul className="space-y-2" aria-labelledby="company-navigation">
               <li>
                 <Link href="/about" className="text-sm text-muted-foreground hover:text-primary">
                   About Us
@@ -80,7 +84,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-medium mb-4">Contact</h3>
+            <h3 className="text-lg font-medium mb-4" id="contact-information">Contact</h3>
             <address className="not-italic">
               <p className="text-sm text-muted-foreground mb-2">
                 Lahore
@@ -88,21 +92,30 @@ export default function Footer() {
                 Punjab, 55000
               </p>
               <p className="text-sm text-muted-foreground mb-2">
-                <a href="tel:+923350706014" className="hover:text-primary">
+                <a 
+                  href="tel:+923350706014" 
+                  className="hover:text-primary"
+                  aria-label="Call our office at +92 335 0706014"
+                >
                   (92) 335-0706014
                 </a>
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                <a href="mailto:info@commitsoftware.com" className="hover:text-primary">
+                <a 
+                  href="mailto:info@commitsoftware.com" 
+                  className="hover:text-primary"
+                  aria-label="Email us at info@commitsoftware.dev"
+                >
                   info@commitsoftware.dev
                 </a>
               </p>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4" aria-label="Social media links">
                 <a
                   href="https://linkedin.com/company/commit-software-solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary"
+                  aria-label="Visit our LinkedIn page"
                 >
                   <span className="sr-only">LinkedIn</span>
                   <Linkedin className="h-5 w-5" />
@@ -121,4 +134,3 @@ export default function Footer() {
     </footer>
   )
 }
-
