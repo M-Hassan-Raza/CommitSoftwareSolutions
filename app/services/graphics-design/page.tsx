@@ -5,12 +5,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle } from "lucide-react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { config } from "@fortawesome/fontawesome-svg-core"
-import pslogo from "@/public/photoshop.png"
-import ailogo from "@/public/illustrator.png"
-import idlogo from "@/public/indesign.png"
-import xdlogo from "@/public/xd.png"
-import aelogo from "@/public/aftereffects.png"
-import lrlogo from "@/public/lightroom.png"
+import pslogo from "@/public/photoshop.webp"
+import ailogo from "@/public/illustrator.webp"
+import idlogo from "@/public/indesign.webp"
+import xdlogo from "@/public/xd.webp"
+import aelogo from "@/public/aftereffects.webp"
+import lrlogo from "@/public/lightroom.webp"
 import {
      faFigma,
      faSketch,
@@ -106,7 +106,7 @@ export default function GraphicDesignPage() {
                               </div>
                               <div className="relative">
                                    <Image
-                                        src="/graphics.jpg?height=600&width=800"
+                                        src="/graphics.webp?height=600&width=800"
                                         alt="Graphic Design"
                                         width={800}
                                         height={600}
@@ -444,7 +444,7 @@ export default function GraphicDesignPage() {
 
                               <div className="relative">
                                    <Image
-                                        src="/whygraphics.jpg?height=600&width=800"
+                                        src="/whygraphics.webp?height=600&width=800"
                                         alt="Graphic Design Benefits"
                                         width={800}
                                         height={600}

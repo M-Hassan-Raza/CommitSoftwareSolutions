@@ -115,3 +115,28 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.testimonial-slider {
+  animation: slide 30s linear infinite;
+  width: 300%;
+}
+
+.testimonial-slider:hover {
+  animation-play-state: paused;
+}

@@ -77,9 +77,9 @@ export default function Header() {
               />
             </div>
             <div className="flex flex-col justify-center h-12 -ml-4"> {/* Ensure vertical alignment is good */}
-              <span className="font-bold text-l text-primary leading-tight">Commit</span>
-              <span className="font-bold text-l text-primary leading-tight -mt-0.5">Software</span>
-              <span className="font-bold text-l text-primary leading-tight -mt-0.5">Solutions</span>
+              <span className="font-bold text-sm text-primary leading-tight">Commit</span>
+              <span className="font-bold text-sm text-primary leading-tight -mt-0.5">Software</span>
+              <span className="font-bold text-sm text-primary leading-tight -mt-0.5">Solutions</span>
             </div>
           </Link>
         </div>

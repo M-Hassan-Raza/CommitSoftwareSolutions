@@ -78,7 +78,7 @@ export default function CloudDevOpsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/cloud.jpg?height=600&width=800"
+                src="/cloud.webp?height=600&width=800"
                 alt="Cloud and DevOps"
                 width={800}
                 height={600}
@@ -95,17 +95,17 @@ export default function CloudDevOpsPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Transform Your IT Infrastructure</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              In today's digital landscape, businesses need agile, scalable, and reliable infrastructure to remain competitive. 
-              Our Cloud & DevOps services help you modernize your IT operations, from infrastructure optimization to 
+              In today's digital landscape, businesses need agile, scalable, and reliable infrastructure to remain competitive.
+              Our Cloud & DevOps services help you modernize your IT operations, from infrastructure optimization to
               continuous delivery pipelines.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              We combine cloud-native architecture with DevOps best practices to automate your infrastructure, accelerate 
-              your development lifecycle, and reduce operational overhead, enabling your team to focus on delivering value 
+              We combine cloud-native architecture with DevOps best practices to automate your infrastructure, accelerate
+              your development lifecycle, and reduce operational overhead, enabling your team to focus on delivering value
               to your customers.
             </p>
             <p className="text-lg text-muted-foreground">
-              Whether you're planning a cloud migration, implementing CI/CD pipelines, or looking to optimize your cloud costs, 
+              Whether you're planning a cloud migration, implementing CI/CD pipelines, or looking to optimize your cloud costs,
               our team of certified cloud and DevOps engineers provides end-to-end solutions tailored to your specific business needs.
             </p>
           </div>
@@ -353,7 +353,7 @@ export default function CloudDevOpsPage() {
             ].map((tech, index) => (
               <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-4 text-center">
-                  <div className="h-24 flex items-center justify-center mb-2"> 
+                  <div className="h-24 flex items-center justify-center mb-2">
                     <FontAwesomeIcon
                       icon={getTechIcon(tech)}
                       style={{ color: getIconColor(tech) }}
@@ -420,7 +420,7 @@ export default function CloudDevOpsPage() {
 
             <div className="relative">
               <Image
-                src="/whycloud.jpg?height=600&width=800"
+                src="/whycloud.webp?height=600&width=800"
                 alt="Cloud & DevOps Benefits"
                 width={800}
                 height={600}

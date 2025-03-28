@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: "Expert software development and digital services for modern businesses",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Commit Software Solutions",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Commit Software Solutions",
     description: "Expert software development and digital services for modern businesses",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

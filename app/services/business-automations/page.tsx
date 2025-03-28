@@ -77,7 +77,7 @@ export default function BusinessAutomationsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/automation.jpeg?height=600&width=800"
+                src="/automation.webp?height=600&width=800"
                 alt="Business Automation"
                 width={800}
                 height={600}
@@ -94,15 +94,15 @@ export default function BusinessAutomationsPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Transform Your Business Operations</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              In today's fast-paced business environment, manual processes drain resources and limit scalability. Our business 
+              In today's fast-paced business environment, manual processes drain resources and limit scalability. Our business
               automation solutions help you identify and streamline repetitive tasks, workflows, and operations across your organization.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              From simple task automation to complex cross-platform workflows, we design customized solutions that reduce human error, 
+              From simple task automation to complex cross-platform workflows, we design customized solutions that reduce human error,
               increase efficiency, and free your team to focus on high-value activities that drive business growth.
             </p>
             <p className="text-lg text-muted-foreground">
-              Our approach combines strategic analysis with technical expertise to deliver automation solutions that integrate 
+              Our approach combines strategic analysis with technical expertise to deliver automation solutions that integrate
               seamlessly with your existing systems and adapt to your evolving business needs.
             </p>
           </div>
@@ -347,7 +347,7 @@ export default function BusinessAutomationsPage() {
             ].map((tech, index) => (
               <Card key={index} className="border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-4 text-center">
-                  <div className="h-24 flex items-center justify-center mb-2"> 
+                  <div className="h-24 flex items-center justify-center mb-2">
                     <FontAwesomeIcon
                       icon={getTechIcon(tech)}
                       style={{ color: getIconColor(tech) }}
@@ -414,7 +414,7 @@ export default function BusinessAutomationsPage() {
 
             <div className="relative">
               <Image
-                src="/whyautomation.jpeg?height=600&width=800"
+                src="/whyautomation.webp?height=600&width=800"
                 alt="Business Automation Benefits"
                 width={800}
                 height={600}
