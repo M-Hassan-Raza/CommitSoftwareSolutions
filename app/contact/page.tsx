@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto">
       {/* Hero Section */}
-      <section className="py-10 md:py-28 relative overflow-hidden">
+      <section className="py-6 md:py-6 relative overflow-hidden">
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
@@ -35,7 +35,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-3 md:py-3">
         <div className="container">
           <div className="max-w-5xl mx-auto mb-16">
             <div className="space-y-10">
