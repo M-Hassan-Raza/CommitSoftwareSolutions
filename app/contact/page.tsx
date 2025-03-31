@@ -37,25 +37,25 @@ export default function ContactPage() {
       {/* Contact Info Section */}
       <section className="py-16 md:py-24">
         <div className="container">
-          <div className="max-w-4xl mx-auto mb-16">
+          <div className="max-w-5xl mx-auto mb-16">
             <div className="space-y-10">
               <div>
                 <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                   {/* Email Card */}
                   <Card className="border shadow-sm h-full">
-                    <CardContent className="p-6 flex flex-col h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
                       <div className="flex items-center mb-4">
-                        <div className="bg-primary/10 p-3 rounded-full mr-3">
-                          <Mail className="h-5 w-5 text-primary" />
+                        <div className="bg-primary/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                         </div>
-                        <h3 className="text-lg font-semibold">Email</h3>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Email</h3>
                       </div>
-                      <p className="mb-4 text-muted-foreground">
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
                         Drop us a line anytime and we'll get back to you within 24 hours.
                       </p>
                       <div className="mt-auto">
-                        <Button variant="outline" className="w-full" asChild>
+                        <Button variant="outline" className="w-full text-xs truncate" asChild>
                           <a href="mailto:info@commitsoftware.dev">
                             info@commitsoftware.dev
                           </a>
@@ -66,22 +66,22 @@ export default function ContactPage() {
 
                   {/* WhatsApp Card */}
                   <Card className="border shadow-sm h-full">
-                    <CardContent className="p-6 flex flex-col h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
                       <div className="flex items-center mb-4">
-                        <div className="bg-green-500/10 p-3 rounded-full mr-3">
-                          <MessageCircle className="h-5 w-5 text-green-500" />
+                        <div className="bg-green-500/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
                         </div>
-                        <h3 className="text-lg font-semibold">Send a Message</h3>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Send a Message</h3>
                       </div>
-                      <p className="mb-4 text-muted-foreground">
-                        Chat with us on WhatsApp for immediate assistance. We typically respond within minutes.
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
+                        Chat with us on WhatsApp for immediate assistance.
                       </p>
                       <div className="mt-auto">
                         <WhatsAppChatButton
                           phoneNumber="+92-335-0706014"
                           message="Hello! I'd like to know more about your software development services."
                           showPopup={false}
-                          className="w-full bg-green-500 hover:bg-green-600"
+                          className="w-full bg-green-500 hover:bg-green-600 text-sm sm:text-base"
                         />
                       </div>
                     </CardContent>
@@ -89,20 +89,20 @@ export default function ContactPage() {
 
                   {/* Schedule Card */}
                   <Card className="border shadow-sm h-full">
-                    <CardContent className="p-6 flex flex-col h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
                       <div className="flex items-center mb-4">
-                        <div className="bg-primary/10 p-3 rounded-full mr-3">
-                          <Calendar className="h-5 w-5 text-primary" />
+                        <div className="bg-primary/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                         </div>
-                        <h3 className="text-lg font-semibold">Schedule a Call</h3>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Schedule a Call</h3>
                       </div>
-                      <p className="mb-4 text-muted-foreground">
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
                         Book a free consultation call to discuss your project needs.
                       </p>
                       <div className="mt-auto">
-                        <Button variant="outline" className="w-full" asChild>
+                        <Button variant="outline" className="w-full text-sm sm:text-base truncate" asChild>
                           <Link href="https://cal.com/muhammad-hassan-raza/30min">
-                            Book a 30-minute consultation
+                            Book a consultation
                           </Link>
                         </Button>
                       </div>
@@ -111,27 +111,27 @@ export default function ContactPage() {
 
                   {/* Connect Online Card */}
                   <Card className="border shadow-sm h-full">
-                    <CardContent className="p-6 flex flex-col h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
                       <div className="flex items-center mb-4">
-                        <div className="bg-primary/10 p-3 rounded-full mr-3">
-                          <Globe className="h-5 w-5 text-primary" />
+                        <div className="bg-primary/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <Globe className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                         </div>
-                        <h3 className="text-lg font-semibold">Connect Online</h3>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Connect Online</h3>
                       </div>
-                      <p className="mb-4 text-muted-foreground">
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
                         Follow us on social media or visit our portfolio website.
                       </p>
                       <div className="mt-auto space-y-2">
-                        <Button variant="outline" className="w-full" asChild>
+                        <Button variant="outline" className="w-full text-sm sm:text-base truncate" asChild>
                           <Link href="https://linkedin.com/company/commit-software-solutions">
-                            <Linkedin className="h-4 w-4 mr-2" />
-                            LinkedIn
+                            <Linkedin className="h-4 w-4 mr-2 flex-shrink-0" />
+                            <span className="truncate">LinkedIn</span>
                           </Link>
                         </Button>
-                        <Button variant="outline" className="w-full" asChild>
+                        <Button variant="outline" className="w-full text-sm sm:text-base truncate" asChild>
                           <Link href="https://mhassan.dev">
-                            <Globe className="h-4 w-4 mr-2" />
-                            Portfolio
+                            <Globe className="h-4 w-4 mr-2 flex-shrink-0" />
+                            <span className="truncate">Portfolio</span>
                           </Link>
                         </Button>
                       </div>
@@ -139,7 +139,6 @@ export default function ContactPage() {
                   </Card>
                 </div>
               </div>
-
               <Card className="border-0 shadow-md">
                 <CardContent className="p-6">
                   <h2 className="text-2xl font-bold mb-6">How We Can Help</h2>
