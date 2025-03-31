@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { WhatsAppChatButton } from "@/components/whatsapp-chat-button";
 import { Mail, Calendar, Linkedin, Globe, MessageCircle, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto">
       {/* Hero Section */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-10 md:py-28 relative overflow-hidden">
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
@@ -34,87 +35,110 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info Section */}
-<section className="py-16 md:py-24">
-  <div className="container">
-    <div className="max-w-4xl mx-auto mb-16">
-      <div className="space-y-10">
-        <div>
-          <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Email Card */}
-            <Card className="border shadow-sm h-full">
-              <CardContent className="p-6 flex flex-col h-full">
-                <div className="flex items-center mb-4">
-                  <div className="bg-primary/10 p-3 rounded-full mr-3">
-                    <Mail className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold">Email</h3>
-                </div>
-                <p className="mb-4 text-muted-foreground">
-                  Drop us a line anytime and we'll get back to you within 24 hours.
-                </p>
-                <div className="mt-auto">
-                  <Button variant="outline" className="w-full" asChild>
-                    <a href="mailto:info@commitsoftware.dev">
-                      info@commitsoftware.dev
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-4xl mx-auto mb-16">
+            <div className="space-y-10">
+              <div>
+                <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  {/* Email Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-primary/10 p-3 rounded-full mr-3">
+                          <Mail className="h-5 w-5 text-primary" />
+                        </div>
+                        <h3 className="text-lg font-semibold">Email</h3>
+                      </div>
+                      <p className="mb-4 text-muted-foreground">
+                        Drop us a line anytime and we'll get back to you within 24 hours.
+                      </p>
+                      <div className="mt-auto">
+                        <Button variant="outline" className="w-full" asChild>
+                          <a href="mailto:info@commitsoftware.dev">
+                            info@commitsoftware.dev
+                          </a>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
 
-            {/* Schedule Card */}
-            <Card className="border shadow-sm h-full">
-              <CardContent className="p-6 flex flex-col h-full">
-                <div className="flex items-center mb-4">
-                  <div className="bg-primary/10 p-3 rounded-full mr-3">
-                    <Calendar className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold">Schedule a Call</h3>
-                </div>
-                <p className="mb-4 text-muted-foreground">
-                  Book a free consultation call to discuss your project needs.
-                </p>
-                <div className="mt-auto">
-                  <Button variant="outline" className="w-full" asChild>
-                    <Link href="https://cal.com/muhammad-hassan-raza/30min">
-                      Book a 30-minute consultation
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+                  {/* WhatsApp Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-green-500/10 p-3 rounded-full mr-3">
+                          <MessageCircle className="h-5 w-5 text-green-500" />
+                        </div>
+                        <h3 className="text-lg font-semibold">Send a Message</h3>
+                      </div>
+                      <p className="mb-4 text-muted-foreground">
+                        Chat with us on WhatsApp for immediate assistance. We typically respond within minutes.
+                      </p>
+                      <div className="mt-auto">
+                        <WhatsAppChatButton
+                          phoneNumber="+92-335-0706014"
+                          message="Hello! I'd like to know more about your software development services."
+                          showPopup={false}
+                          className="w-full bg-green-500 hover:bg-green-600"
+                        />
+                      </div>
+                    </CardContent>
+                  </Card>
 
-            {/* Connect Online Card */}
-            <Card className="border shadow-sm h-full">
-              <CardContent className="p-6 flex flex-col h-full">
-                <div className="flex items-center mb-4">
-                  <div className="bg-primary/10 p-3 rounded-full mr-3">
-                    <Globe className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold">Connect Online</h3>
+                  {/* Schedule Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-primary/10 p-3 rounded-full mr-3">
+                          <Calendar className="h-5 w-5 text-primary" />
+                        </div>
+                        <h3 className="text-lg font-semibold">Schedule a Call</h3>
+                      </div>
+                      <p className="mb-4 text-muted-foreground">
+                        Book a free consultation call to discuss your project needs.
+                      </p>
+                      <div className="mt-auto">
+                        <Button variant="outline" className="w-full" asChild>
+                          <Link href="https://cal.com/muhammad-hassan-raza/30min">
+                            Book a 30-minute consultation
+                          </Link>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Connect Online Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-primary/10 p-3 rounded-full mr-3">
+                          <Globe className="h-5 w-5 text-primary" />
+                        </div>
+                        <h3 className="text-lg font-semibold">Connect Online</h3>
+                      </div>
+                      <p className="mb-4 text-muted-foreground">
+                        Follow us on social media or visit our portfolio website.
+                      </p>
+                      <div className="mt-auto space-y-2">
+                        <Button variant="outline" className="w-full" asChild>
+                          <Link href="https://linkedin.com/company/commit-software-solutions">
+                            <Linkedin className="h-4 w-4 mr-2" />
+                            LinkedIn
+                          </Link>
+                        </Button>
+                        <Button variant="outline" className="w-full" asChild>
+                          <Link href="https://mhassan.dev">
+                            <Globe className="h-4 w-4 mr-2" />
+                            Portfolio
+                          </Link>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
-                <p className="mb-4 text-muted-foreground">
-                  Follow us on social media or visit our portfolio website.
-                </p>
-                <div className="mt-auto space-y-2">
-                  <Button variant="outline" className="w-full" asChild>
-                    <Link href="https://linkedin.com/company/commit-software-solutions">
-                      <Linkedin className="h-4 w-4 mr-2" />
-                      LinkedIn
-                    </Link>
-                  </Button>
-                  <Button variant="outline" className="w-full" asChild>
-                    <Link href="https://mhassan.dev">
-                      <Globe className="h-4 w-4 mr-2" />
-                      Portfolio
-                    </Link>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+              </div>
 
               <Card className="border-0 shadow-md">
                 <CardContent className="p-6">
@@ -165,7 +189,7 @@ export default function ContactPage() {
               Common questions about working with our team
             </p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-0 shadow-sm">
@@ -174,21 +198,21 @@ export default function ContactPage() {
                   <p className="text-muted-foreground">Project timelines vary based on complexity and requirements. Small to medium projects typically take 4-12 weeks, while larger enterprise solutions may require 3-6 months for full implementation.</p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">How do you handle project pricing?</h3>
                   <p className="text-muted-foreground">Each project is unique. After our initial consultation, we'll provide a detailed proposal with transparent pricing based on project scope, complexity, and timeline requirements.</p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">Do you offer ongoing support after project completion?</h3>
                   <p className="text-muted-foreground">Yes, we offer maintenance and support packages to ensure your software continues to run smoothly. We can discuss support options during our consultation.</p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">What technologies do you specialize in?</h3>
@@ -208,9 +232,9 @@ export default function ContactPage() {
             <p className="text-xl opacity-90 mb-8">
               Let's discuss your requirements and build something amazing together
             </p>
-            <Button 
-              size="lg" 
-              variant="secondary" 
+            <Button
+              size="lg"
+              variant="secondary"
               asChild
             >
               <Link href="https://cal.com/muhammad-hassan-raza/30min">
