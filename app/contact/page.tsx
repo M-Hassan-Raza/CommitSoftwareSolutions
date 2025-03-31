@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { WhatsAppChatButton } from "@/components/whatsapp-chat-button";
 import { Mail, Calendar, Linkedin, Globe, MessageCircle, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto">
       {/* Hero Section */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-10 md:py-28 relative overflow-hidden">
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
@@ -33,151 +34,144 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5 dark:opacity-[0.03]"></div>
       </section>
 
-      {/* Contact Form and Info Section */}
+      {/* Contact Info Section */}
       <section className="py-16 md:py-24">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-            <Card className="border-0 shadow-md">
-              <CardContent className="p-6 pt-8">
-                <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="w-full p-3 border border-gray-300 rounded-md"
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="w-full p-3 border border-gray-300 rounded-md"
-                      placeholder="your.email@example.com"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      className="w-full p-3 border border-gray-300 rounded-md"
-                      placeholder="How can we help you?"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      className="w-full p-3 border border-gray-300 rounded-md"
-                      placeholder="Tell us about your project or inquiry..."
-                      required
-                    ></textarea>
-                  </div>
-                  <Button type="submit" size="lg" className="w-full">
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-
+          <div className="max-w-5xl mx-auto mb-16">
             <div className="space-y-10">
               <div>
-                <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
-                      <Mail className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2">Email</h3>
-                      <a href="mailto:raihassanraza10@gmail.com" className="text-blue-600 hover:underline">
-                      info@commitsoftware.dev
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
-                      <Calendar className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2">Schedule a Call</h3>
-                      <Button variant="outline" asChild>
-                        <Link href="https://cal.com/muhammad-hassan-raza/30min">
-                          Book a 30-minute consultation
-                        </Link>
-                      </Button>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
-                      <Globe className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2">Connect Online</h3>
-                      <div className="flex space-x-4">
-                        <Button variant="outline" size="sm" asChild>
-                          <Link href="https://linkedin.com/company/commit-software-solutions">
-                            <Linkedin className="h-4 w-4 mr-2" />
-                            LinkedIn
-                          </Link>
+                <h2 className="text-2xl font-bold mb-8">Contact Information</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+                  {/* Email Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-primary/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                        </div>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Email</h3>
+                      </div>
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
+                        Drop us a line anytime and we'll get back to you within 24 hours.
+                      </p>
+                      <div className="mt-auto">
+                        <Button variant="outline" className="w-full text-xs truncate" asChild>
+                          <a href="mailto:info@commitsoftware.dev">
+                            info@commitsoftware.dev
+                          </a>
                         </Button>
-                        <Button variant="outline" size="sm" asChild>
-                          <Link href="https://mhassan.dev">
-                            <Globe className="h-4 w-4 mr-2" />
-                            Portfolio
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* WhatsApp Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-green-500/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500" />
+                        </div>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Send a Message</h3>
+                      </div>
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
+                        Chat with us on WhatsApp for immediate assistance.
+                      </p>
+                      <div className="mt-auto">
+                        <WhatsAppChatButton
+                          phoneNumber="+92-335-0706014"
+                          message="Hello! I'd like to know more about your software development services."
+                          showPopup={false}
+                          className="w-full bg-green-500 hover:bg-green-600 text-sm sm:text-base"
+                        />
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Schedule Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-primary/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                        </div>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Schedule a Call</h3>
+                      </div>
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
+                        Book a free consultation call to discuss your project needs.
+                      </p>
+                      <div className="mt-auto">
+                        <Button variant="outline" className="w-full text-sm sm:text-base truncate" asChild>
+                          <Link href="https://cal.com/muhammad-hassan-raza/30min">
+                            Book a consultation
                           </Link>
                         </Button>
                       </div>
-                    </div>
-                  </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Connect Online Card */}
+                  <Card className="border shadow-sm h-full">
+                    <CardContent className="p-4 sm:p-6 flex flex-col h-full">
+                      <div className="flex items-center mb-4">
+                        <div className="bg-primary/10 p-2 sm:p-3 rounded-full mr-2 sm:mr-3 flex-shrink-0">
+                          <Globe className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                        </div>
+                        <h3 className="text-base sm:text-lg font-semibold truncate">Connect Online</h3>
+                      </div>
+                      <p className="mb-4 text-sm sm:text-base text-muted-foreground">
+                        Follow us on social media or visit our portfolio website.
+                      </p>
+                      <div className="mt-auto space-y-2">
+                        <Button variant="outline" className="w-full text-sm sm:text-base truncate" asChild>
+                          <Link href="https://linkedin.com/company/commit-software-solutions">
+                            <Linkedin className="h-4 w-4 mr-2 flex-shrink-0" />
+                            <span className="truncate">LinkedIn</span>
+                          </Link>
+                        </Button>
+                        <Button variant="outline" className="w-full text-sm sm:text-base truncate" asChild>
+                          <Link href="https://mhassan.dev">
+                            <Globe className="h-4 w-4 mr-2 flex-shrink-0" />
+                            <span className="truncate">Portfolio</span>
+                          </Link>
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
-
               <Card className="border-0 shadow-md">
                 <CardContent className="p-6">
                   <h2 className="text-2xl font-bold mb-6">How We Can Help</h2>
-                  <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Custom software development for your business</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Polaris implementation and customization</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                      <span>E-commerce platform development</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Business automation solutions</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                      <span>Technical consultation for your project</span>
-                    </li>
-                  </ul>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Custom software development for your business</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Polaris implementation and customization</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                        <span>E-commerce platform development</span>
+                      </li>
+                    </ul>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Business automation solutions</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Technical consultation for your project</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Ongoing support and maintenance</span>
+                      </li>
+                    </ul>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -194,30 +188,30 @@ export default function ContactPage() {
               Common questions about working with our team
             </p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
-            <div className="grid gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">What is your typical project timeline?</h3>
                   <p className="text-muted-foreground">Project timelines vary based on complexity and requirements. Small to medium projects typically take 4-12 weeks, while larger enterprise solutions may require 3-6 months for full implementation.</p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">How do you handle project pricing?</h3>
                   <p className="text-muted-foreground">Each project is unique. After our initial consultation, we'll provide a detailed proposal with transparent pricing based on project scope, complexity, and timeline requirements.</p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">Do you offer ongoing support after project completion?</h3>
                   <p className="text-muted-foreground">Yes, we offer maintenance and support packages to ensure your software continues to run smoothly. We can discuss support options during our consultation.</p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-0 shadow-sm">
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-2">What technologies do you specialize in?</h3>
@@ -237,29 +231,16 @@ export default function ContactPage() {
             <p className="text-xl opacity-90 mb-8">
               Let's discuss your requirements and build something amazing together
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button 
-                size="lg" 
-                variant="secondary" 
-                asChild
-              >
-                <Link href="https://cal.com/muhammad-hassan-raza/30min">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Schedule Your Free Consultation
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                asChild
-              >
-                <Link href="#contact-form">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Send Us a Message
-                </Link>
-              </Button>
-            </div>
+            <Button
+              size="lg"
+              variant="secondary"
+              asChild
+            >
+              <Link href="https://cal.com/muhammad-hassan-raza/30min">
+                <Calendar className="mr-2 h-5 w-5" />
+                Schedule Your Free Consultation
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
