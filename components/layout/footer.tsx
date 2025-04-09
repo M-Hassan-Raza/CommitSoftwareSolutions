@@ -9,8 +9,8 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="flex items-center space-x-2"
               aria-label="Commit Software home page"
             >
@@ -80,6 +80,11 @@ export default function Footer() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap.xml" className="text-sm text-muted-foreground hover:text-primary">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -92,8 +97,8 @@ export default function Footer() {
                 Punjab, 55000
               </p>
               <p className="text-sm text-muted-foreground mb-2">
-                <a 
-                  href="tel:+923350706014" 
+                <a
+                  href="tel:+923350706014"
                   className="hover:text-primary"
                   aria-label="Call our office at +92 335 0706014"
                 >
@@ -101,8 +106,8 @@ export default function Footer() {
                 </a>
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                <a 
-                  href="mailto:info@commitsoftware.com" 
+                <a
+                  href="mailto:info@commitsoftware.com"
                   className="hover:text-primary"
                   aria-label="Email us at info@commitsoftware.dev"
                 >
