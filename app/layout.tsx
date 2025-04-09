@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     template: "%s | Commit Software Solutions",
     default: "Commit Software Solutions",
   },
+  verification: {
+    google: "-gyKhE0ED1vC7A6DdS-t99TNURdLFek9J4dNMJC3JJU",
+  },
   description: "Expert software development and digital services for modern businesses",
   openGraph: {
     type: "website",
