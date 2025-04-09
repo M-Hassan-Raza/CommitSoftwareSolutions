@@ -1,5 +1,8 @@
 import { MetadataRoute } from "next";
 
+// Force static generation
+export const dynamic = "force-static";
+
 // Base URL for the website
 const baseUrl = "https://commitsoftware.dev";
 

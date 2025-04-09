@@ -1,5 +1,8 @@
 import { MetadataRoute } from "next";
 
+// Force static generation
+export const dynamic = "force-static";
+
 // Define your robots.txt content
 export default function robots(): MetadataRoute.Robots {
      return {
