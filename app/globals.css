@@ -5,11 +5,125 @@
   --foreground: #ededed;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  /* Fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Background and foreground */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Brand Colors - Purple/Pink theme */
+  --color-brand-50: oklch(0.98 0.02 300);
+  --color-brand-100: oklch(0.95 0.05 300);
+  --color-brand-200: oklch(0.90 0.10 300);
+  --color-brand-300: oklch(0.85 0.15 300);
+  --color-brand-400: oklch(0.80 0.20 300);
+  --color-brand-500: oklch(0.75 0.25 300); /* Main brand purple */
+  --color-brand-600: oklch(0.70 0.30 300);
+  --color-brand-700: oklch(0.65 0.35 300);
+  --color-brand-800: oklch(0.60 0.40 300);
+  --color-brand-900: oklch(0.55 0.45 300);
+  --color-brand-950: oklch(0.50 0.50 300);
+  
+  /* Brand Accent - Pink */
+  --color-accent-50: oklch(0.98 0.02 340);
+  --color-accent-100: oklch(0.95 0.05 340);
+  --color-accent-200: oklch(0.90 0.10 340);
+  --color-accent-300: oklch(0.85 0.15 340);
+  --color-accent-400: oklch(0.80 0.20 340);
+  --color-accent-500: oklch(0.75 0.25 340);
+  --color-accent-600: oklch(0.70 0.30 340);
+  --color-accent-700: oklch(0.65 0.35 340);
+  --color-accent-800: oklch(0.60 0.40 340);
+  --color-accent-900: oklch(0.55 0.45 340);
+  --color-accent-950: oklch(0.50 0.50 340);
+  
+  /* Service Colors - Business Automation (Purple/Pink) */
+  --color-business-50: oklch(0.98 0.02 300);
+  --color-business-100: oklch(0.95 0.05 300);
+  --color-business-200: oklch(0.90 0.10 300);
+  --color-business-300: oklch(0.85 0.15 300);
+  --color-business-400: oklch(0.80 0.20 300);
+  --color-business-500: oklch(0.75 0.25 300);
+  --color-business-600: oklch(0.70 0.30 300);
+  --color-business-700: oklch(0.65 0.35 300);
+  --color-business-800: oklch(0.60 0.40 300);
+  --color-business-900: oklch(0.55 0.45 300);
+  --color-business-950: oklch(0.50 0.50 300);
+  
+  /* Service Colors - Web Development (Green/Emerald) */
+  --color-web-50: oklch(0.98 0.02 150);
+  --color-web-100: oklch(0.95 0.05 150);
+  --color-web-200: oklch(0.90 0.10 150);
+  --color-web-300: oklch(0.85 0.15 150);
+  --color-web-400: oklch(0.80 0.20 150);
+  --color-web-500: oklch(0.75 0.25 150);
+  --color-web-600: oklch(0.70 0.30 150);
+  --color-web-700: oklch(0.65 0.35 150);
+  --color-web-800: oklch(0.60 0.40 150);
+  --color-web-900: oklch(0.55 0.45 150);
+  --color-web-950: oklch(0.50 0.50 150);
+  
+  /* Service Colors - Cloud/DevOps (Blue/Cyan) */
+  --color-cloud-50: oklch(0.98 0.02 200);
+  --color-cloud-100: oklch(0.95 0.05 200);
+  --color-cloud-200: oklch(0.90 0.10 200);
+  --color-cloud-300: oklch(0.85 0.15 200);
+  --color-cloud-400: oklch(0.80 0.20 200);
+  --color-cloud-500: oklch(0.75 0.25 200);
+  --color-cloud-600: oklch(0.70 0.30 200);
+  --color-cloud-700: oklch(0.65 0.35 200);
+  --color-cloud-800: oklch(0.60 0.40 200);
+  --color-cloud-900: oklch(0.55 0.45 200);
+  --color-cloud-950: oklch(0.50 0.50 200);
+  
+  /* Service Colors - POS Solutions (Orange/Red) */
+  --color-pos-50: oklch(0.98 0.02 30);
+  --color-pos-100: oklch(0.95 0.05 30);
+  --color-pos-200: oklch(0.90 0.10 30);
+  --color-pos-300: oklch(0.85 0.15 30);
+  --color-pos-400: oklch(0.80 0.20 30);
+  --color-pos-500: oklch(0.75 0.25 30);
+  --color-pos-600: oklch(0.70 0.30 30);
+  --color-pos-700: oklch(0.65 0.35 30);
+  --color-pos-800: oklch(0.60 0.40 30);
+  --color-pos-900: oklch(0.55 0.45 30);
+  --color-pos-950: oklch(0.50 0.50 30);
+  
+  /* Service Colors - Graphics Design (Pink/Rose) */
+  --color-design-50: oklch(0.98 0.02 340);
+  --color-design-100: oklch(0.95 0.05 340);
+  --color-design-200: oklch(0.90 0.10 340);
+  --color-design-300: oklch(0.85 0.15 340);
+  --color-design-400: oklch(0.80 0.20 340);
+  --color-design-500: oklch(0.75 0.25 340);
+  --color-design-600: oklch(0.70 0.30 340);
+  --color-design-700: oklch(0.65 0.35 340);
+  --color-design-800: oklch(0.60 0.40 340);
+  --color-design-900: oklch(0.55 0.45 340);
+  --color-design-950: oklch(0.50 0.50 340);
+  
+  /* Effect Colors */
+  --color-glow: oklch(0.60 0.40 300); /* For glow effects */
+  --color-glow-rgb: 132, 0, 255; /* RGB format for components */
+  --color-glow-hex: #B19EEF; /* Hex format for Three.js components */
+  --color-border: oklch(0.30 0.10 300); /* Border color */
+  --color-background-dark: oklch(0.05 0.02 300); /* Dark background */
+  
+  /* Neutral Colors - Enhanced gray scale */
+  --color-neutral-50: oklch(0.98 0 0);
+  --color-neutral-100: oklch(0.95 0 0);
+  --color-neutral-200: oklch(0.90 0 0);
+  --color-neutral-300: oklch(0.85 0 0);
+  --color-neutral-400: oklch(0.70 0 0);
+  --color-neutral-500: oklch(0.55 0 0);
+  --color-neutral-600: oklch(0.45 0 0);
+  --color-neutral-700: oklch(0.35 0 0);
+  --color-neutral-800: oklch(0.25 0 0);
+  --color-neutral-900: oklch(0.15 0 0);
+  --color-neutral-950: oklch(0.08 0 0);
 }
 
 body {

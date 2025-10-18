@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-brand-400 to-accent-400 rounded-lg flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm"></div>
             </div>
             <span className="text-white font-bold text-xl">Commit Software</span>
@@ -38,25 +38,25 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
+              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
             >
               Home
             </Link>
             <Link
               href="/#services"
-              className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
+              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
+              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
+              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
             >
               Contact
             </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button className="text-white hover:text-purple-300 transition-colors duration-200">
+            <button className="text-white hover:text-brand-300 transition-colors duration-200">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -79,7 +79,7 @@ export default function Navbar() {
           isScrolled ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-purple-500/10 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-500/10 via-accent-500/10 to-brand-500/10 animate-pulse"></div>
         <div className="absolute inset-0 backdrop-blur-3xl bg-white/5"></div>
       </div>
     </nav>

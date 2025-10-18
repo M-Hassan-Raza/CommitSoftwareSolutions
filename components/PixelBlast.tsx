@@ -328,10 +328,26 @@ void main(){
 
 const MAX_CLICKS = 10;
 
+// Utility function to get theme colors for Three.js components
+const getThemeColor = (colorVar: string): string => {
+  if (typeof window === 'undefined') return '#B19EEF'; // SSR fallback
+  
+  const computedStyle = getComputedStyle(document.documentElement);
+  const color = computedStyle.getPropertyValue(colorVar).trim();
+  
+  // If it's a CSS variable reference, resolve it
+  if (color.startsWith('var(')) {
+    const varName = color.slice(4, -1); // Remove 'var(' and ')'
+    return computedStyle.getPropertyValue(varName).trim() || '#B19EEF';
+  }
+  
+  return color || '#B19EEF';
+};
+
 const PixelBlast: React.FC<PixelBlastProps> = ({
   variant = 'square',
   pixelSize = 3,
-  color = '#B19EEF',
+  color = 'var(--color-glow-hex)',
   className,
   style,
   antialias = true,
@@ -429,10 +445,11 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
       renderer.domElement.style.height = '100%';
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       container.appendChild(renderer.domElement);
+      const resolvedColor = getThemeColor(color);
       const uniforms = {
         uResolution: { value: new THREE.Vector2(0, 0) },
         uTime: { value: 0 },
-        uColor: { value: new THREE.Color(color) },
+        uColor: { value: new THREE.Color(resolvedColor) },
         uClickPos: {
           value: Array.from({ length: MAX_CLICKS }, () => new THREE.Vector2(-1, -1))
         },
@@ -597,9 +614,10 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
       };
     } else {
       const t = threeRef.current!;
+      const resolvedColor = getThemeColor(color);
       t.uniforms.uShapeType.value = SHAPE_MAP[variant] ?? 0;
       t.uniforms.uPixelSize.value = pixelSize * t.renderer.getPixelRatio();
-      t.uniforms.uColor.value.set(color);
+      t.uniforms.uColor.value.set(resolvedColor);
       t.uniforms.uScale.value = patternScale;
       t.uniforms.uDensity.value = patternDensity;
       t.uniforms.uPixelJitter.value = pixelSizeJitter;

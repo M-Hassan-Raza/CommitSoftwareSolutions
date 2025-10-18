@@ -34,7 +34,7 @@ export default function RootLayout({
           <PixelBlast
             variant="square"
             pixelSize={3}
-            color="#B19EEF"
+            color="var(--color-glow-hex)"
             patternScale={2}
             patternDensity={1}
             enableRipples={true}

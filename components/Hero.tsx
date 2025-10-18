@@ -16,10 +16,10 @@ export default function Hero() {
         </h1>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link href="/#services" className="bg-white text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg">
+          <Link href="/#services" className="bg-white text-neutral-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-neutral-100 transition-colors duration-200 shadow-lg">
             Our Services
           </Link>
-          <Link href="/contact" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-black transition-all duration-200">
+          <Link href="/contact" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-neutral-900 transition-all duration-200">
             Get Started
           </Link>
         </div>
