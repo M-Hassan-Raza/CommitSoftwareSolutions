@@ -44,7 +44,15 @@ export default function FluidGlass({ mode = 'lens', lensProps = {}, barProps = {
   } = rawOverrides;
 
   return (
-    <Canvas camera={{ position: [0, 0, 20], fov: 15 }} gl={{ alpha: true }}>
+    <Canvas 
+      camera={{ position: [0, 0, 20], fov: 15 }} 
+      gl={{ alpha: true }}
+      style={{ width: '100%', height: '100%' }}
+      onPointerMove={(e) => {
+        // Ensure pointer events are captured
+        e.stopPropagation();
+      }}
+    >
       <ScrollControls damping={0.2} pages={3} distance={0.4}>
         {mode === 'bar' && <NavItems items={navItems as NavItem[]} />}
         <Wrapper modeProps={modeProps}>
@@ -110,9 +118,20 @@ const ModeWrapper = memo(function ModeWrapper({
     const { gl, viewport, pointer, camera } = state;
     const v = viewport.getCurrentViewport(camera, [0, 0, 15]);
 
+    // Enhanced pointer tracking with better responsiveness
     const destX = followPointer ? (pointer.x * v.width) / 2 : 0;
     const destY = lockToBottom ? -v.height / 2 + 0.2 : followPointer ? (pointer.y * v.height) / 2 : 0;
-    easing.damp3(ref.current.position, [destX, destY, 15], 0.15, delta);
+    
+    // Use faster damping for more responsive movement
+    easing.damp3(ref.current.position, [destX, destY, 15], 0.25, delta);
+
+    // Add subtle rotation based on pointer position for more dynamic effect
+    if (followPointer) {
+      const rotationX = (pointer.y * Math.PI) / 4;
+      const rotationY = (pointer.x * Math.PI) / 4;
+      easing.damp(ref.current.rotation, 'x', rotationX, 0.1, delta);
+      easing.damp(ref.current.rotation, 'y', rotationY, 0.1, delta);
+    }
 
     if ((modeProps as { scale?: number }).scale == null) {
       const maxWorld = v.width * 0.9;
@@ -280,18 +299,23 @@ function Images() {
     }
   });
 
+  // Create placeholder images with different colors
+  const placeholderImages = [
+    { position: [-2, 0, 0], scale: [3, height / 1.1], color: '#8B5CF6' },
+    { position: [2, 0, 3], scale: [3, 3], color: '#06B6D4' },
+    { position: [-2.05, -height, 6], scale: [1, 3], color: '#10B981' },
+    { position: [-0.6, -height, 9], scale: [1, 2], color: '#F59E0B' },
+    { position: [0.75, -height, 10.5], scale: [1.5, 1.5], color: '#EF4444' }
+  ];
+
   return (
     <group ref={group}>
-      {/* eslint-disable-next-line jsx-a11y/alt-text */}
-      <Image position={[-2, 0, 0]} scale={[3, height / 1.1]} url="/assets/demo/cs1.webp" />
-      {/* eslint-disable-next-line jsx-a11y/alt-text */}
-      <Image position={[2, 0, 3]} scale={3} url="/assets/demo/cs2.webp" />
-      {/* eslint-disable-next-line jsx-a11y/alt-text */}
-      <Image position={[-2.05, -height, 6]} scale={[1, 3]} url="/assets/demo/cs3.webp" />
-      {/* eslint-disable-next-line jsx-a11y/alt-text */}
-      <Image position={[-0.6, -height, 9]} scale={[1, 2]} url="/assets/demo/cs1.webp" />
-      {/* eslint-disable-next-line jsx-a11y/alt-text */}
-      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/assets/demo/cs2.webp" />
+      {placeholderImages.map((img, index) => (
+        <mesh key={index} position={img.position as [number, number, number]}>
+          <planeGeometry args={img.scale as [number, number]} />
+          <meshBasicMaterial color={img.color} transparent opacity={0.8} />
+        </mesh>
+      ))}
     </group>
   );
 }
