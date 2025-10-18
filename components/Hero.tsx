@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Hero() {
 
   return (
@@ -9,17 +11,17 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-          It's dangerous to go alone!<br />
-          Take this.
+          Transform Your Business<br />
+          With Smart Software Solutions
         </h1>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="bg-white text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg">
+          <Link href="/#services" className="bg-white text-black px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg">
+            Our Services
+          </Link>
+          <Link href="/contact" className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-black transition-all duration-200">
             Get Started
-          </button>
-          <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-black transition-all duration-200">
-            Learn More
-          </button>
+          </Link>
         </div>
       </div>
     </section>

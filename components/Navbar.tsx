@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,35 +31,35 @@ export default function Navbar() {
             <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded-sm"></div>
             </div>
-            <span className="text-white font-bold text-xl">React Bits</span>
+            <span className="text-white font-bold text-xl">Commit Software</span>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/#services"
               className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
             >
-              Docs
-            </a>
-            <a
-              href="#"
-              className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
-            >
-              Examples
-            </a>
-            <a
-              href="#"
+              Services
+            </Link>
+            <Link
+              href="/about"
               className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
             >
               About
-            </a>
+            </Link>
+            <Link
+              href="/contact"
+              className="text-white hover:text-purple-300 transition-colors duration-200 font-medium"
+            >
+              Contact
+            </Link>
           </div>
 
           {/* Mobile menu button */}
