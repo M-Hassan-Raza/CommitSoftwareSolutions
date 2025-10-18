@@ -1,39 +1,7 @@
 import Hero from "../components/Hero";
-import ServiceCard from "../components/ServiceCard";
+import MagicBento from "../components/MagicBento";
 
 export default function Home() {
-  const services = [
-    {
-      title: "Business Automations",
-      description: "Streamline operations and boost productivity with smart, effortless automation solutions.",
-      href: "/services/business-automations",
-      imageUrl: "/assets/demo/business-automation.webp"
-    },
-    {
-      title: "Cloud & DevOps",
-      description: "Optimize your infrastructure with scalable cloud solutions and efficient DevOps practices.",
-      href: "/services/cloud-devops",
-      imageUrl: "/assets/demo/cloud-devops.webp"
-    },
-    {
-      title: "Web Development",
-      description: "Create powerful, responsive web applications with modern technologies and frameworks.",
-      href: "/services/web-development",
-      imageUrl: "/assets/demo/web-development.webp"
-    },
-    {
-      title: "Graphics Design",
-      description: "Craft intuitive, engaging user experiences with creative and functional design solutions.",
-      href: "/services/graphics-design",
-      imageUrl: "/assets/demo/graphics-design.webp"
-    },
-    {
-      title: "POS Solutions",
-      description: "Enhance retail operations with custom, intelligent point-of-sale systems tailored to your business.",
-      href: "/services/pos-solutions",
-      imageUrl: "/assets/demo/pos-solutions.webp"
-    }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -51,18 +19,18 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
-              <ServiceCard
-                key={service.title}
-                title={service.title}
-                description={service.description}
-                href={service.href}
-                imageUrl={service.imageUrl}
-                mode="lens"
-              />
-            ))}
-          </div>
+          <MagicBento 
+            textAutoHide={true}
+            enableStars={true}
+            enableSpotlight={true}
+            enableBorderGlow={true}
+            enableTilt={true}
+            enableMagnetism={true}
+            clickEffect={true}
+            spotlightRadius={300}
+            particleCount={12}
+            glowColor="132, 0, 255"
+          />
         </div>
       </section>
     </div>
