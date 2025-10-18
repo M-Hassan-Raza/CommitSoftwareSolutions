@@ -20,43 +20,43 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'h-16 backdrop-blur-xl bg-black/20 border-b border-white/10'
-          : 'h-20 backdrop-blur-sm bg-black/10'
+          ? 'h-16 backdrop-blur-xl bg-white/80 border-b border-brand-200/20'
+          : 'h-20 backdrop-blur-sm bg-white/60'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-brand-400 to-accent-400 rounded-lg flex items-center justify-center">
-              <div className="w-4 h-4 bg-white rounded-sm"></div>
+            <div className="w-8 h-8 bg-gradient-to-br from-brand-500 to-accent-500 rounded-xl flex items-center justify-center">
+              <div className="w-4 h-4 bg-white rounded-md"></div>
             </div>
-            <span className="text-white font-bold text-xl">Commit Software</span>
+            <span className="text-brand-600 font-bold text-xl">Commit Software</span>
           </div>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
+              className="text-brand-600 hover:text-brand-500 transition-colors duration-200 font-medium"
             >
               Home
             </Link>
             <Link
               href="/#services"
-              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
+              className="text-brand-600 hover:text-brand-500 transition-colors duration-200 font-medium"
             >
               Services
             </Link>
             <Link
               href="/about"
-              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
+              className="text-brand-600 hover:text-brand-500 transition-colors duration-200 font-medium"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-white hover:text-brand-300 transition-colors duration-200 font-medium"
+              className="text-brand-600 hover:text-brand-500 transition-colors duration-200 font-medium"
             >
               Contact
             </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button className="text-white hover:text-brand-300 transition-colors duration-200">
+            <button className="text-brand-600 hover:text-brand-500 transition-colors duration-200">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>

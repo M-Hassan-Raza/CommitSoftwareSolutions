@@ -9,34 +9,34 @@
   --font-mono: var(--font-geist-mono);
 
   /* Background and foreground */
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: oklch(0.98 0.02 340); /* Light pink background like tweakcn */
+  --color-foreground: oklch(0.15 0 0); /* Dark text for contrast */
 
-  /* Brand Colors - Purple/Pink theme */
-  --color-brand-50: oklch(0.98 0.02 300);
-  --color-brand-100: oklch(0.95 0.05 300);
-  --color-brand-200: oklch(0.90 0.10 300);
-  --color-brand-300: oklch(0.85 0.15 300);
-  --color-brand-400: oklch(0.80 0.20 300);
-  --color-brand-500: oklch(0.75 0.25 300); /* Main brand purple */
-  --color-brand-600: oklch(0.70 0.30 300);
-  --color-brand-700: oklch(0.65 0.35 300);
-  --color-brand-800: oklch(0.60 0.40 300);
-  --color-brand-900: oklch(0.55 0.45 300);
-  --color-brand-950: oklch(0.50 0.50 300);
+  /* Brand Colors - Pink theme like tweakcn */
+  --color-brand-50: oklch(0.98 0.02 340);
+  --color-brand-100: oklch(0.95 0.05 340);
+  --color-brand-200: oklch(0.90 0.10 340);
+  --color-brand-300: oklch(0.85 0.15 340);
+  --color-brand-400: oklch(0.80 0.20 340);
+  --color-brand-500: oklch(0.70 0.25 340); /* Main brand pink like tweakcn #d04f99 */
+  --color-brand-600: oklch(0.65 0.30 340);
+  --color-brand-700: oklch(0.60 0.35 340);
+  --color-brand-800: oklch(0.55 0.40 340);
+  --color-brand-900: oklch(0.50 0.45 340);
+  --color-brand-950: oklch(0.45 0.50 340);
 
-  /* Brand Accent - Pink */
-  --color-accent-50: oklch(0.98 0.02 340);
-  --color-accent-100: oklch(0.95 0.05 340);
-  --color-accent-200: oklch(0.90 0.10 340);
-  --color-accent-300: oklch(0.85 0.15 340);
-  --color-accent-400: oklch(0.80 0.20 340);
-  --color-accent-500: oklch(0.75 0.25 340);
-  --color-accent-600: oklch(0.70 0.30 340);
-  --color-accent-700: oklch(0.65 0.35 340);
-  --color-accent-800: oklch(0.60 0.40 340);
-  --color-accent-900: oklch(0.55 0.45 340);
-  --color-accent-950: oklch(0.50 0.50 340);
+  /* Brand Accent - Teal like tweakcn */
+  --color-accent-50: oklch(0.98 0.02 180);
+  --color-accent-100: oklch(0.95 0.05 180);
+  --color-accent-200: oklch(0.90 0.10 180);
+  --color-accent-300: oklch(0.85 0.15 180);
+  --color-accent-400: oklch(0.80 0.20 180);
+  --color-accent-500: oklch(0.75 0.25 180); /* Teal accent like tweakcn #8acfd1 */
+  --color-accent-600: oklch(0.70 0.30 180);
+  --color-accent-700: oklch(0.65 0.35 180);
+  --color-accent-800: oklch(0.60 0.40 180);
+  --color-accent-900: oklch(0.55 0.45 180);
+  --color-accent-950: oklch(0.50 0.50 180);
 
   /* Service Colors - Business Automation (Purple/Pink) */
   --color-business-50: oklch(0.98 0.02 300);
@@ -136,6 +136,8 @@
 body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
 
 /* Smooth scrolling */

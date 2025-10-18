@@ -729,14 +729,14 @@ const MagicBento: React.FC<BentoProps> = ({
         <div className="card-responsive grid gap-2">
           {cardData.map((card, index) => {
             const isLarge = card.size === 'large';
-            const baseClassName = `card flex flex-col justify-between relative ${isLarge ? 'aspect-[4/3] min-h-[300px]' : 'aspect-[4/3] min-h-[200px]'} w-full max-w-full p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_var(--shadow-color)] ${
+            const baseClassName = `card flex flex-col justify-between relative ${isLarge ? 'aspect-[4/3] min-h-[300px]' : 'aspect-[4/3] min-h-[200px]'} w-full max-w-full p-6 rounded-2xl border border-white/20 font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl bg-white/80 backdrop-blur-sm ${
               enableBorderGlow ? 'card--border-glow' : ''
             }`;
 
             const cardStyle = {
-              backgroundColor: card.color || 'var(--background-dark)',
-              borderColor: 'var(--border-color)',
-              color: 'var(--white)',
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              borderColor: 'rgba(255, 255, 255, 0.2)',
+              color: 'var(--color-foreground)',
               '--glow-x': '50%',
               '--glow-y': '50%',
               '--glow-intensity': '0',
@@ -757,15 +757,15 @@ const MagicBento: React.FC<BentoProps> = ({
                   enableMagnetism={enableMagnetism}
                   href={card.href}
                 >
-                  <div className="card__header flex justify-between gap-3 relative text-white">
-                    <span className={`card__label ${isLarge ? 'text-lg' : 'text-base'}`}>{card.label}</span>
+                  <div className="card__header flex justify-between gap-3 relative text-brand-500">
+                    <span className={`card__label ${isLarge ? 'text-lg' : 'text-base'} font-medium`}>{card.label}</span>
                   </div>
-                  <div className="card__content flex flex-col relative text-white">
+                  <div className="card__content flex flex-col relative text-brand-600">
                     <h3 className={`card__title font-normal ${isLarge ? 'text-xl' : 'text-base'} m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                       {card.title}
                     </h3>
                     <p
-                      className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 text-white/95 ${textAutoHide ? 'text-clamp-2' : ''}`}
+                      className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 text-brand-500 ${textAutoHide ? 'text-clamp-2' : ''}`}
                     >
                       {card.description}
                     </p>
@@ -888,14 +888,14 @@ const MagicBento: React.FC<BentoProps> = ({
                   el.addEventListener('click', handleClick);
                 }}
               >
-                <div className="card__header flex justify-between gap-3 relative text-white">
-                  <span className={`card__label ${isLarge ? 'text-lg' : 'text-base'}`}>{card.label}</span>
+                <div className="card__header flex justify-between gap-3 relative text-brand-500">
+                  <span className={`card__label ${isLarge ? 'text-lg' : 'text-base'} font-medium`}>{card.label}</span>
                 </div>
-                <div className="card__content flex flex-col relative text-white">
+                <div className="card__content flex flex-col relative text-brand-600">
                   <h3 className={`card__title font-normal ${isLarge ? 'text-xl' : 'text-base'} m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                     {card.title}
                   </h3>
-                  <p className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 text-white/95 ${textAutoHide ? 'text-clamp-2' : ''}`}>
+                  <p className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 text-brand-500 ${textAutoHide ? 'text-clamp-2' : ''}`}>
                     {card.description}
                   </p>
                 </div>
