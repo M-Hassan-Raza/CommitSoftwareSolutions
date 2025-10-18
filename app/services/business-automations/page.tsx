@@ -15,7 +15,7 @@ export default function BusinessAutomations() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               What We Offer
             </h2>
-            <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Comprehensive automation solutions tailored to your specific business needs
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function BusinessAutomations() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Workflow Automation</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Automate repetitive tasks and complex workflows to reduce manual effort and human error.
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function BusinessAutomations() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Data Processing</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Intelligent data processing and analysis to extract valuable insights from your business data.
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function BusinessAutomations() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Mobile Integration</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Seamless integration with mobile devices and apps for on-the-go business management.
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function BusinessAutomations() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Why Choose Our Automation Solutions
             </h2>
-            <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Experience the power of intelligent automation that adapts to your business
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function BusinessAutomations() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Reduce operational costs by up to 60%</span>
+                  <span className="text-white/90">Reduce operational costs by up to 60%</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-business-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -90,7 +90,7 @@ export default function BusinessAutomations() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Increase productivity and efficiency</span>
+                  <span className="text-white/90">Increase productivity and efficiency</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-business-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -98,7 +98,7 @@ export default function BusinessAutomations() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Eliminate human errors and inconsistencies</span>
+                  <span className="text-white/90">Eliminate human errors and inconsistencies</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-business-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -106,14 +106,14 @@ export default function BusinessAutomations() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">24/7 automated monitoring and reporting</span>
+                  <span className="text-white/90">24/7 automated monitoring and reporting</span>
                 </li>
               </ul>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
               <h4 className="text-xl font-semibold text-white mb-4">Ready to Get Started?</h4>
-              <p className="text-neutral-300 mb-6">
+              <p className="text-white/90 mb-6">
                 Let&apos;s discuss how automation can transform your business operations and drive growth.
               </p>
               <a 

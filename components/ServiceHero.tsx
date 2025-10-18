@@ -16,7 +16,7 @@ export default function ServiceHero({ title, description }: ServiceHeroProps) {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           {title}
         </h1>
-        <p className="text-lg sm:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
           {description}
         </p>
       </div>

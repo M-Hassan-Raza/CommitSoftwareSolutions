@@ -15,7 +15,7 @@ export default function GraphicsDesign() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Our Design Services
             </h2>
-            <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Creative design solutions that make your brand stand out
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function GraphicsDesign() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">UI/UX Design</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 User-centered design that creates intuitive and engaging digital experiences.
               </p>
             </div>
@@ -40,7 +40,7 @@ export default function GraphicsDesign() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Brand Identity</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Complete brand identity design including logos, color schemes, and style guides.
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function GraphicsDesign() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Print Design</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Professional print materials including business cards, brochures, and marketing collateral.
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function GraphicsDesign() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Why Choose Our Design Services
             </h2>
-            <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Experience the power of design that converts and engages
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function GraphicsDesign() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">User-centered design approach for better engagement</span>
+                  <span className="text-white/90">User-centered design approach for better engagement</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-design-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -90,7 +90,7 @@ export default function GraphicsDesign() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Modern, clean aesthetics that build trust</span>
+                  <span className="text-white/90">Modern, clean aesthetics that build trust</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-design-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -98,7 +98,7 @@ export default function GraphicsDesign() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Consistent brand identity across all touchpoints</span>
+                  <span className="text-white/90">Consistent brand identity across all touchpoints</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-design-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -106,14 +106,14 @@ export default function GraphicsDesign() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Mobile-first responsive design principles</span>
+                  <span className="text-white/90">Mobile-first responsive design principles</span>
                 </li>
               </ul>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
               <h4 className="text-xl font-semibold text-white mb-4">Ready to Design?</h4>
-              <p className="text-neutral-300 mb-6">
+              <p className="text-white/90 mb-6">
                 Let&apos;s create designs that make your brand unforgettable.
               </p>
               <a 

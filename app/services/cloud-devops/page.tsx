@@ -15,7 +15,7 @@ export default function CloudDevOps() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Our Cloud & DevOps Expertise
             </h2>
-            <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Comprehensive cloud infrastructure and DevOps solutions for modern businesses
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function CloudDevOps() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Cloud Migration</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Seamless migration to cloud platforms with zero downtime and enhanced security.
               </p>
             </div>
@@ -41,7 +41,7 @@ export default function CloudDevOps() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">CI/CD Pipeline</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Automated deployment pipelines for faster, more reliable software delivery.
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function CloudDevOps() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Security & Monitoring</h3>
-              <p className="text-neutral-300">
+              <p className="text-white/90">
                 Comprehensive security measures and real-time monitoring for your infrastructure.
               </p>
             </div>
@@ -68,7 +68,7 @@ export default function CloudDevOps() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Why Choose Our Cloud & DevOps Solutions
             </h2>
-            <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
               Experience the power of modern cloud infrastructure and DevOps practices
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function CloudDevOps() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">99.9% uptime guarantee with robust infrastructure</span>
+                  <span className="text-white/90">99.9% uptime guarantee with robust infrastructure</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-cloud-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -91,7 +91,7 @@ export default function CloudDevOps() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Auto-scaling based on demand and traffic</span>
+                  <span className="text-white/90">Auto-scaling based on demand and traffic</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-cloud-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -99,7 +99,7 @@ export default function CloudDevOps() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">Advanced security and compliance standards</span>
+                  <span className="text-white/90">Advanced security and compliance standards</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-cloud-400 rounded-full flex items-center justify-center mr-3 mt-1">
@@ -107,14 +107,14 @@ export default function CloudDevOps() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-neutral-300">24/7 monitoring and instant alerting</span>
+                  <span className="text-white/90">24/7 monitoring and instant alerting</span>
                 </li>
               </ul>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
               <h4 className="text-xl font-semibold text-white mb-4">Ready to Scale?</h4>
-              <p className="text-neutral-300 mb-6">
+              <p className="text-white/90 mb-6">
                 Let&apos;s build a robust cloud infrastructure that grows with your business.
               </p>
               <a 

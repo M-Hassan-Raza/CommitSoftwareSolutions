@@ -14,7 +14,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Our Services
             </h2>
-            <p className="text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
               Comprehensive software solutions designed to accelerate your business growth and digital transformation.
             </p>
           </div>

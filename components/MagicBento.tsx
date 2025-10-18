@@ -570,6 +570,8 @@ const MagicBento: React.FC<BentoProps> = ({
             --glow-radius: 200px;
             --glow-color: ${glowColor};
             --border-color: var(--color-border);
+            --border-color-rgba: var(--color-border-rgba);
+            --shadow-color: var(--color-shadow);
             --background-dark: var(--color-background-dark);
             --white: var(--color-foreground);
             --purple-primary: var(--color-brand-500);
@@ -646,9 +648,9 @@ const MagicBento: React.FC<BentoProps> = ({
                 rgba(${glowColor}, calc(var(--glow-intensity) * 0.4)) 30%,
                 transparent 60%);
             border-radius: inherit;
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(var(--white) 0 0) content-box, linear-gradient(var(--white) 0 0);
             mask-composite: subtract;
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(var(--white) 0 0) content-box, linear-gradient(var(--white) 0 0);
             -webkit-mask-composite: xor;
             pointer-events: none;
             transition: opacity 0.3s ease;
@@ -660,7 +662,7 @@ const MagicBento: React.FC<BentoProps> = ({
           }
           
           .card--border-glow:hover {
-            box-shadow: 0 4px 20px rgba(46, 24, 78, 0.4), 0 0 30px rgba(${glowColor}, 0.2);
+            box-shadow: 0 4px 20px var(--border-color-rgba), 0 0 30px rgba(${glowColor}, 0.2);
           }
           
           .particle::before {
@@ -676,7 +678,7 @@ const MagicBento: React.FC<BentoProps> = ({
           }
           
           .particle-container:hover {
-            box-shadow: 0 4px 20px rgba(46, 24, 78, 0.2), 0 0 30px rgba(${glowColor}, 0.2);
+            box-shadow: 0 4px 20px var(--border-color-rgba), 0 0 30px rgba(${glowColor}, 0.2);
           }
           
           .text-clamp-1 {
@@ -727,7 +729,7 @@ const MagicBento: React.FC<BentoProps> = ({
         <div className="card-responsive grid gap-2">
           {cardData.map((card, index) => {
             const isLarge = card.size === 'large';
-            const baseClassName = `card flex flex-col justify-between relative ${isLarge ? 'aspect-[4/3] min-h-[300px]' : 'aspect-[4/3] min-h-[200px]'} w-full max-w-full p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
+            const baseClassName = `card flex flex-col justify-between relative ${isLarge ? 'aspect-[4/3] min-h-[300px]' : 'aspect-[4/3] min-h-[200px]'} w-full max-w-full p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_var(--shadow-color)] ${
               enableBorderGlow ? 'card--border-glow' : ''
             }`;
 
@@ -763,7 +765,7 @@ const MagicBento: React.FC<BentoProps> = ({
                       {card.title}
                     </h3>
                     <p
-                      className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 opacity-90 ${textAutoHide ? 'text-clamp-2' : ''}`}
+                      className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 text-white/95 ${textAutoHide ? 'text-clamp-2' : ''}`}
                     >
                       {card.description}
                     </p>
@@ -893,7 +895,7 @@ const MagicBento: React.FC<BentoProps> = ({
                   <h3 className={`card__title font-normal ${isLarge ? 'text-xl' : 'text-base'} m-0 mb-1 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                     {card.title}
                   </h3>
-                  <p className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 opacity-90 ${textAutoHide ? 'text-clamp-2' : ''}`}>
+                  <p className={`card__description ${isLarge ? 'text-sm' : 'text-xs'} leading-5 text-white/95 ${textAutoHide ? 'text-clamp-2' : ''}`}>
                     {card.description}
                   </p>
                 </div>
