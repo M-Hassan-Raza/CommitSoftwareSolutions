@@ -559,6 +559,15 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
         uniforms.uClickTimes.value[ix] = uniforms.uTime.value;
         if (threeRef.current) threeRef.current.clickIx = (ix + 1) % MAX_CLICKS;
       };
+      // Global handler to capture clicks even when foreground overlays block the canvas
+      const onGlobalPointerDown = (e: PointerEvent) => {
+        // Only handle if renderer is alive and the click is within the canvas bounds
+        const rect = renderer.domElement.getBoundingClientRect();
+        const withinX = e.clientX >= rect.left && e.clientX <= rect.right;
+        const withinY = e.clientY >= rect.top && e.clientY <= rect.bottom;
+        if (!withinX || !withinY) return;
+        onPointerDown(e);
+      };
       const onPointerMove = (e: PointerEvent) => {
         if (!touch) return;
         const { fx, fy, w, h } = mapToPixels(e);
@@ -567,6 +576,7 @@ const PixelBlast: React.FC<PixelBlastProps> = ({
       renderer.domElement.addEventListener('pointerdown', onPointerDown, {
         passive: true
       });
+      window.addEventListener('pointerdown', onGlobalPointerDown, { passive: true });
       renderer.domElement.addEventListener('pointermove', onPointerMove, {
         passive: true
       });
