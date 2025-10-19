@@ -211,7 +211,7 @@ export default function Pricing() {
             </div>
             
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-brand-200/20">
-              <h3 className="text-lg font-semibold text-brand-600 mb-3">What's included in the support period?</h3>
+              <h3 className="text-lg font-semibold text-brand-600 mb-3">What&apos;s included in the support period?</h3>
               <p className="text-brand-600/90">
                 Support includes bug fixes, minor updates, and technical assistance. Major feature additions or redesigns are quoted separately. We also provide documentation and training materials.
               </p>
@@ -220,7 +220,7 @@ export default function Pricing() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-brand-200/20">
               <h3 className="text-lg font-semibold text-brand-600 mb-3">Can I get a custom quote?</h3>
               <p className="text-brand-600/90">
-                Absolutely! Every project is unique. Contact us for a free consultation and we'll provide a detailed, customized quote based on your specific requirements and timeline.
+                Absolutely! Every project is unique. Contact us for a free consultation and we&apos;ll provide a detailed, customized quote based on your specific requirements and timeline.
               </p>
             </div>
             

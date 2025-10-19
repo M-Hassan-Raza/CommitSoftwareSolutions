@@ -16,7 +16,7 @@ export default function Testimonials() {
               What Our Clients Say
             </h2>
             <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Don't just take our word for it - hear from the businesses we've helped transform
+              Don&apos;t just take our word for it - hear from the businesses we&apos;ve helped transform
             </p>
           </div>
           

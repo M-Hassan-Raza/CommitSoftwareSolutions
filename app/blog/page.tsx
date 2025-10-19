@@ -220,7 +220,7 @@ export default function Blog() {
                   <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Company News</span>
                   <span className="text-sm text-brand-600/70">Nov 10, 2024</span>
                 </div>
-                <h3 className="text-lg font-semibold text-brand-600 mb-2">Commit Software's 2024 Achievements</h3>
+                <h3 className="text-lg font-semibold text-brand-600 mb-2">Commit Software&apos;s 2024 Achievements</h3>
                 <p className="text-brand-600/90 text-sm mb-4">
                   A look back at our biggest accomplishments and milestones from the past year.
                 </p>

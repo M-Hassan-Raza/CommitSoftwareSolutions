@@ -212,7 +212,7 @@ export default function About() {
             Ready to Work With Us?
           </h2>
           <p className="text-lg text-brand-600/90 mb-8">
-            Let's discuss how we can help transform your business with innovative software solutions.
+            Let&apos;s discuss how we can help transform your business with innovative software solutions.
           </p>
           <a 
             href="/contact" 
