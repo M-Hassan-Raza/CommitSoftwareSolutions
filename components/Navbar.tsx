@@ -57,10 +57,34 @@ export default function Navbar() {
                   Services
                 </Link>
                 <Link
+                  href="/portfolio"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
+                >
+                  Portfolio
+                </Link>
+                <Link
                   href="/about"
                   className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
                 >
                   About
+                </Link>
+                <Link
+                  href="/testimonials"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
+                >
+                  Testimonials
+                </Link>
+                <Link
+                  href="/blog"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
+                >
+                  Blog
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
+                >
+                  Pricing
                 </Link>
                 <Link
                   href="/contact"
@@ -111,10 +135,34 @@ export default function Navbar() {
                 Services
               </Link>
               <Link
+                href="/portfolio"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Portfolio
+              </Link>
+              <Link
                 href="/about"
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 About
+              </Link>
+              <Link
+                href="/testimonials"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Testimonials
+              </Link>
+              <Link
+                href="/blog"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Blog
+              </Link>
+              <Link
+                href="/pricing"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Pricing
               </Link>
               <Link
                 href="/contact"
