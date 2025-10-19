@@ -63,18 +63,18 @@ export default function RootLayout({
         <div className="fixed inset-0 z-0">
           <PixelBlast
             variant="square"
-            pixelSize={3}
+            pixelSize={4}
             color="var(--color-glow-hex)"
-            patternScale={2}
-            patternDensity={1}
+            patternScale={3}
+            patternDensity={0.6}
             enableRipples={true}
-            rippleIntensityScale={1}
-            rippleThickness={0.1}
-            rippleSpeed={0.3}
-            speed={0.5}
+            rippleIntensityScale={0.5}
+            rippleThickness={0.05}
+            rippleSpeed={0.2}
+            speed={0.3}
             transparent={true}
-            edgeFade={0.1}
-            className="w-full h-full motion-reduce:animate-none"
+            edgeFade={0.3}
+            className="w-full h-full motion-reduce:animate-none opacity-30"
           />
         </div>
         
