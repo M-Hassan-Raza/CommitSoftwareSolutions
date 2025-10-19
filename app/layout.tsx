@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PixelBlast from "../components/PixelBlast";
+import { companyName, legalName, siteUrl } from "../lib/company";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Commit Software Solutions",
+  metadataBase: new URL(siteUrl),
+  title: `${companyName} Solutions`;
   description: "Professional software development services including business automation, cloud solutions, web development, graphics design, and POS systems.",
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title: `${companyName} Solutions`,
+    description: "Professional software development services.",
+    siteName: legalName,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${companyName} Solutions`,
+    description: "Professional software development services.",
+  },
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -30,6 +46,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <head>
+          <script
+            type="application/ld+json"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: legalName,
+                url: siteUrl,
+              }),
+            }}
+          />
+        </head>
         {/* Background */}
         <div className="fixed inset-0 z-0">
           <PixelBlast
@@ -45,7 +75,7 @@ export default function RootLayout({
             speed={0.5}
             transparent={true}
             edgeFade={0.1}
-            className="w-full h-full"
+            className="w-full h-full motion-reduce:animate-none"
           />
         </div>
         

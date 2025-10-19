@@ -87,12 +87,6 @@ export default function Navbar() {
                   Blog
                 </Link>
                 <Link
-                  href="/pricing"
-                  className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
-                >
-                  Pricing
-                </Link>
-                <Link
                   href="/contact"
                   className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
                 >
@@ -169,12 +163,6 @@ export default function Navbar() {
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 Blog
-              </Link>
-              <Link
-                href="/pricing"
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-              >
-                Pricing
               </Link>
               <Link
                 href="/contact"

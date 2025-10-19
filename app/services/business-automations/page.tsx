@@ -60,8 +60,100 @@ export default function BusinessAutomations() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Deliverables Section */}
+      <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
+              What You Get
+            </h2>
+            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+              Complete automation solutions with full documentation and support
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-business-400 to-accent-400 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">Automation Scripts</h3>
+              <p className="text-brand-600/90">
+                Custom automation scripts with full source code and detailed documentation.
+              </p>
+            </div>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-business-400 to-accent-400 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">Process Documentation</h3>
+              <p className="text-brand-600/90">
+                Complete workflow documentation and user guides for your team.
+              </p>
+            </div>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-business-400 to-accent-400 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">Performance Metrics</h3>
+              <p className="text-brand-600/90">
+                Real-time dashboards showing automation performance and ROI metrics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mini-Roadmap Section */}
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-business-900/20 to-accent-900/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
+              Your 3-6 Week Journey
+            </h2>
+            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+              From analysis to deployment with regular check-ins and demos
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-business-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-brand-600">1</span>
+              </div>
+              <h3 className="text-xl font-semibold text-brand-600 mb-2">Weeks 1-2</h3>
+              <p className="text-brand-600/90">Process analysis & automation design. We map your workflows and identify optimization opportunities.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-business-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-brand-600">2</span>
+              </div>
+              <h3 className="text-xl font-semibold text-brand-600 mb-2">Weeks 3-4</h3>
+              <p className="text-brand-600/90">Development & testing. Building and refining automation scripts with your feedback.</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-business-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-brand-600">3</span>
+              </div>
+              <h3 className="text-xl font-semibold text-brand-600 mb-2">Weeks 5-6</h3>
+              <p className="text-brand-600/90">Deployment & training. Going live with full team training and ongoing support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
@@ -118,7 +210,7 @@ export default function BusinessAutomations() {
               </p>
               <a 
                 href="/contact" 
-                className="inline-flex items-center bg-white text-neutral-900 px-6 py-3 rounded-full font-semibold hover:bg-neutral-100 transition-colors duration-200"
+                className="inline-flex items-center bg-white text-neutral-900 px-6 py-3 rounded-full font-semibold hover:bg-neutral-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
               >
                 Get Free Consultation
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

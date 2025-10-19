@@ -1,5 +1,6 @@
 import ServiceHero from "../../components/ServiceHero";
 import GlassCard from "../../components/GlassCard";
+import { contactEmail, contactPhone, addressCity, addressRegion, addressPostalCode } from "../../lib/company";
 
 export default function Contact() {
   return (
@@ -146,7 +147,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-brand-600 mb-1">Email</h3>
-                      <p className="text-brand-600/90">hello@commitsoftware.com</p>
+                      <p className="text-brand-600/90">{contactEmail}</p>
                       <p className="text-sm text-brand-600/70">We&apos;ll respond within 24 hours</p>
                     </div>
                   </div>
@@ -159,7 +160,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-brand-600 mb-1">Phone</h3>
-                      <p className="text-brand-600/90">+1 (555) 123-4567</p>
+                      <p className="text-brand-600/90">{contactPhone}</p>
                       <p className="text-sm text-brand-600/70">Mon-Fri, 9AM-6PM EST</p>
                     </div>
                   </div>
@@ -173,7 +174,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-brand-600 mb-1">Office</h3>
-                      <p className="text-brand-600/90">123 Tech Street<br />San Francisco, CA 94105</p>
+                      <p className="text-brand-600/90">{addressCity}, {addressRegion} {addressPostalCode}</p>
                       <p className="text-sm text-brand-600/70">Remote work available</p>
                     </div>
                   </div>
@@ -206,7 +207,7 @@ export default function Contact() {
                     <svg className="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Transparent pricing
+                    Clear project scope
                   </li>
                 </ul>
               </div>
