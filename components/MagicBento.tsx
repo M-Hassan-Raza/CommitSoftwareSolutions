@@ -37,10 +37,10 @@ const MOBILE_BREAKPOINT = 768;
 const cardData: BentoCardProps[] = [
   {
     color: 'var(--card)',
-    title: 'POS Solutions',
-    description: 'Enhance retail operations with custom, intelligent point-of-sale systems tailored to your business.',
-    label: 'Retail',
-    href: '/services/pos-solutions',
+    title: 'Polaris POS Solutions',
+    description: 'Complete ERP and POS solution for modern retail businesses. Our live product ready to transform your operations.',
+    label: 'Product',
+    href: '/products/pos-solutions',
     size: 'large'
   },
   {

@@ -57,6 +57,12 @@ export default function Navbar() {
                   Services
                 </Link>
                 <Link
+                  href="/products/pos-solutions"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
+                >
+                  Products
+                </Link>
+                <Link
                   href="/portfolio"
                   className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
                 >
@@ -133,6 +139,12 @@ export default function Navbar() {
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 Services
+              </Link>
+              <Link
+                href="/products/pos-solutions"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Products
               </Link>
               <Link
                 href="/portfolio"

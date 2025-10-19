@@ -66,10 +66,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link 
-                    href="/services/pos-solutions" 
+                    href="/products/pos-solutions" 
                     className="transition-colors duration-200 text-sm text-muted-foreground hover:text-foreground"
                   >
-                    POS Solutions
+                    Polaris POS Solutions
                   </Link>
                 </li>
               </ul>

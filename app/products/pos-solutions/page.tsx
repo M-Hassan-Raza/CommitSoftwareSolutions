@@ -4,8 +4,8 @@ export default function POSSolutions() {
   return (
     <div className="min-h-screen">
       <ServiceHero
-        title="POS Solutions"
-        description="Enhance retail operations with custom, intelligent point-of-sale systems tailored to your business needs and industry requirements."
+        title="Polaris POS Solutions"
+        description="Complete ERP and POS solution for modern retail businesses. A full live product ready to transform your operations."
       />
       
       {/* Features Section */}
@@ -13,10 +13,10 @@ export default function POSSolutions() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Our POS Solutions
+              Polaris - Our Live Product
             </h2>
             <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Complete point-of-sale systems designed for modern retail businesses
+              Complete ERP and POS solution designed for modern retail businesses. Experience the power of our live product.
             </p>
           </div>
           
@@ -65,10 +65,10 @@ export default function POSSolutions() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Why Choose Our POS Solutions
+              Why Choose Polaris
             </h2>
             <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Experience the power of modern POS systems that grow with your business
+              Experience the power of our live ERP and POS product that grows with your business
             </p>
           </div>
           
@@ -112,19 +112,32 @@ export default function POSSolutions() {
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
-              <h4 className="text-xl font-semibold text-brand-600 mb-4">Ready to Upgrade?</h4>
+              <h4 className="text-xl font-semibold text-brand-600 mb-4">Try Polaris Today</h4>
               <p className="text-brand-600/90 mb-6">
-                Let&apos;s build a POS system that transforms your retail operations.
+                Experience our live ERP and POS solution that transforms retail operations.
               </p>
-              <a 
-                href="/contact" 
-                className="inline-flex items-center bg-white text-neutral-900 px-6 py-3 rounded-full font-semibold hover:bg-neutral-100 transition-colors duration-200"
-              >
-                Get Custom Quote
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
+              <div className="space-y-3">
+                <a 
+                  href="https://polariserp.app" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-white text-neutral-900 px-6 py-3 rounded-full font-semibold hover:bg-neutral-100 transition-colors duration-200 w-full justify-center"
+                >
+                  Visit Polaris Live Product
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                <a 
+                  href="/contact" 
+                  className="inline-flex items-center bg-transparent border border-white/20 text-brand-600 px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-200 w-full justify-center"
+                >
+                  Get Custom Quote
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

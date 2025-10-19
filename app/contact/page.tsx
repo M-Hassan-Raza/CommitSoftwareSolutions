@@ -87,7 +87,7 @@ export default function Contact() {
                     <option value="business-automations">Business Automations</option>
                     <option value="cloud-devops">Cloud & DevOps</option>
                     <option value="graphics-design">Graphics Design</option>
-                    <option value="pos-solutions">POS Solutions</option>
+                    <option value="pos-solutions">Polaris POS Solutions</option>
                     <option value="consultation">General Consultation</option>
                   </select>
                 </div>
