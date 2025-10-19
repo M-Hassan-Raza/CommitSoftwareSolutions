@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { contactEmail, contactPhone, addressCity, addressRegion, addressPostalCode, linkedinUrl } from '../lib/company';
 
 export default function Footer() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
 
   return (
     <>

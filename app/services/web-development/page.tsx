@@ -138,7 +138,7 @@ export default function WebDevelopment() {
                 <span className="text-2xl font-bold text-brand-600">2</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 2</h3>
-              <p className="text-brand-600/90">UI/UX design & frontend setup. You'll see the visual direction taking shape.</p>
+              <p className="text-brand-600/90">UI/UX design & frontend setup. You&apos;ll see the visual direction taking shape.</p>
             </div>
             
             <div className="text-center">

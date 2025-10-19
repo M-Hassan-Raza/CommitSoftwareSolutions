@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${companyName} Solutions`;
+  title: `${companyName} Solutions`,
   description: "Professional software development services including business automation, cloud solutions, web development, graphics design, and POS systems.",
   openGraph: {
     type: "website",
@@ -49,7 +49,6 @@ export default function RootLayout({
         <head>
           <script
             type="application/ld+json"
-            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
