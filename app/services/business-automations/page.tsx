@@ -1,4 +1,5 @@
 import ServiceHero from "../../../components/ServiceHero";
+import GlassCard from "../../../components/GlassCard";
 
 export default function BusinessAutomations() {
   return (
@@ -12,12 +13,14 @@ export default function BusinessAutomations() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              What We Offer
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Comprehensive automation solutions tailored to your specific business needs
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                What We Offer
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Comprehensive automation solutions tailored to your specific business needs
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -125,29 +128,29 @@ export default function BusinessAutomations() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-business-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">1</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Weeks 1-2</h3>
               <p className="text-brand-600/90">Process analysis & automation design. We map your workflows and identify optimization opportunities.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-business-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">2</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Weeks 3-4</h3>
               <p className="text-brand-600/90">Development & testing. Building and refining automation scripts with your feedback.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-business-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">3</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Weeks 5-6</h3>
               <p className="text-brand-600/90">Deployment & training. Going live with full team training and ongoing support.</p>
-            </div>
+            </GlassCard>
           </div>
         </div>
       </section>
@@ -156,12 +159,14 @@ export default function BusinessAutomations() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Why Choose Our Automation Solutions
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Experience the power of intelligent automation that adapts to your business
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                Why Choose Our Automation Solutions
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Experience the power of intelligent automation that adapts to your business
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

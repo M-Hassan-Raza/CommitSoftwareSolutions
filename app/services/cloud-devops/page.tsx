@@ -1,4 +1,5 @@
 import ServiceHero from "../../../components/ServiceHero";
+import GlassCard from "../../../components/GlassCard";
 
 export default function CloudDevOps() {
   return (
@@ -12,12 +13,14 @@ export default function CloudDevOps() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Our Cloud & DevOps Expertise
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Comprehensive cloud infrastructure and DevOps solutions for modern businesses
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                Our Cloud & DevOps Expertise
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Comprehensive cloud infrastructure and DevOps solutions for modern businesses
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -126,37 +129,37 @@ export default function CloudDevOps() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-cloud-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">1</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 1-2</h3>
               <p className="text-brand-600/90">Infrastructure assessment & planning. We analyze your current setup and design the optimal cloud architecture.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-cloud-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">2</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 3-4</h3>
               <p className="text-brand-600/90">Migration & setup. Moving your applications to the cloud with zero downtime.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-cloud-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">3</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 5-6</h3>
               <p className="text-brand-600/90">CI/CD & monitoring. Setting up automated deployments and comprehensive monitoring.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-cloud-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">4</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 7-8</h3>
               <p className="text-brand-600/90">Optimization & training. Fine-tuning performance and training your team on the new infrastructure.</p>
-            </div>
+            </GlassCard>
           </div>
         </div>
       </section>
@@ -165,12 +168,14 @@ export default function CloudDevOps() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Why Choose Our Cloud & DevOps Solutions
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Experience the power of modern cloud infrastructure and DevOps practices
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                Why Choose Our Cloud & DevOps Solutions
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Experience the power of modern cloud infrastructure and DevOps practices
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

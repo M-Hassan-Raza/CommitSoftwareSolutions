@@ -1,4 +1,5 @@
 import ServiceHero from "../../../components/ServiceHero";
+import GlassCard from "../../../components/GlassCard";
 
 export default function WebDevelopment() {
   return (
@@ -12,12 +13,14 @@ export default function WebDevelopment() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Our Web Development Services
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Full-stack web development solutions using cutting-edge technologies
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                Our Web Development Services
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Full-stack web development solutions using cutting-edge technologies
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -64,12 +67,14 @@ export default function WebDevelopment() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              What You Get
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Complete deliverables for every web development project
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                What You Get
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Complete deliverables for every web development project
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -116,46 +121,48 @@ export default function WebDevelopment() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-web-900/20 to-web-950/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Your 2-4 Week Journey
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Clear milestones and weekly demos to keep you informed
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                Your 2-4 Week Journey
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Clear milestones and weekly demos to keep you informed
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-web-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">1</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 1</h3>
               <p className="text-brand-600/90">Discovery & wireframes. We understand your goals and create initial designs.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-web-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">2</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 2</h3>
               <p className="text-brand-600/90">UI/UX design & frontend setup. You&apos;ll see the visual direction taking shape.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-web-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">3</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 3</h3>
               <p className="text-brand-600/90">Backend development & integration. Core functionality comes to life.</p>
-            </div>
+            </GlassCard>
             
-            <div className="text-center">
+            <GlassCard className="text-center">
               <div className="w-16 h-16 bg-web-400 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-brand-600">4</span>
               </div>
               <h3 className="text-xl font-semibold text-brand-600 mb-2">Week 4</h3>
               <p className="text-brand-600/90">Testing, optimization & launch. Your app goes live with full support.</p>
-            </div>
+            </GlassCard>
           </div>
         </div>
       </section>
@@ -164,12 +171,14 @@ export default function WebDevelopment() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Why Choose Our Web Development
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              Experience the power of modern web development that drives business growth
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-2">
+                Why Choose Our Web Development
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                Experience the power of modern web development that drives business growth
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
