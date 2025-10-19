@@ -1,4 +1,5 @@
 import ServiceHero from "../../components/ServiceHero";
+import GlassCard from "../../components/GlassCard";
 
 export default function Pricing() {
   return (
@@ -237,12 +238,14 @@ export default function Pricing() {
       {/* CTA Section */}
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-6">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-brand-600/90 mb-8">
-            Let&apos;s discuss your project requirements and get you a detailed quote tailored to your needs.
-          </p>
+          <GlassCard variant="section" className="mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-6">
+              Ready to Get Started?
+            </h2>
+            <p className="text-lg text-brand-600/90 mb-8">
+              Let&apos;s discuss your project requirements and get you a detailed quote tailored to your needs.
+            </p>
+          </GlassCard>
           <a 
             href="/contact" 
             className="inline-flex items-center bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl"

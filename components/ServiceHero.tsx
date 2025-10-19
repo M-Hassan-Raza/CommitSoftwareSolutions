@@ -1,5 +1,7 @@
 'use client';
 
+import GlassCard from './GlassCard';
+
 interface ServiceHeroProps {
   title: string;
   description: string;
@@ -13,12 +15,14 @@ export default function ServiceHero({ title, description }: ServiceHeroProps) {
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-          {title}
-        </h1>
-        <p className="text-lg sm:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-          {description}
-        </p>
+        <GlassCard variant="hero">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+            {title}
+          </h1>
+          <p className="text-lg sm:text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+            {description}
+          </p>
+        </GlassCard>
       </div>
     </section>
   );

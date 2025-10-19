@@ -1,4 +1,5 @@
 import ServiceHero from "../../components/ServiceHero";
+import GlassCard from "../../components/GlassCard";
 
 export default function Contact() {
   return (
@@ -134,7 +135,7 @@ export default function Contact() {
             
             {/* Contact Information */}
             <div className="space-y-8">
-              <div>
+              <GlassCard variant="section">
                 <h2 className="text-2xl font-bold text-brand-600 mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   <div className="flex items-start">
@@ -177,7 +178,7 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </GlassCard>
               
               {/* Response Time */}
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">

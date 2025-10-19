@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import GlassCard from './GlassCard';
 
 export default function Hero() {
 
@@ -10,10 +11,12 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
-          Transform Your Business<br />
-          With Smart Software Solutions
-        </h1>
+        <GlassCard variant="hero" className="mb-8">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            Transform Your Business<br />
+            With Smart Software Solutions
+          </h1>
+        </GlassCard>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link href="/#services" className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl">

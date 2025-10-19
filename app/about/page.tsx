@@ -1,4 +1,5 @@
 import ServiceHero from "../../components/ServiceHero";
+import GlassCard from "../../components/GlassCard";
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <GlassCard variant="section">
               <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-6">
                 Our Mission
               </h2>
@@ -25,7 +26,7 @@ export default function About() {
               <p className="text-lg text-brand-600/90">
                 To be the trusted technology partner that businesses turn to when they need reliable, scalable, and innovative software solutions that deliver exceptional value.
               </p>
-            </div>
+            </GlassCard>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
               <h4 className="text-xl font-semibold text-brand-600 mb-4">Why Choose Us?</h4>
@@ -72,12 +73,14 @@ export default function About() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-brand-900/20 to-brand-950/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Our Core Values
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              The principles that guide everything we do and shape our approach to software development
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
+                Our Core Values
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                The principles that guide everything we do and shape our approach to software development
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -160,12 +163,14 @@ export default function About() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
-              The passionate professionals behind our innovative solutions
-            </p>
+            <GlassCard variant="section" className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
+                Meet Our Team
+              </h2>
+              <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+                The passionate professionals behind our innovative solutions
+              </p>
+            </GlassCard>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -208,12 +213,14 @@ export default function About() {
       {/* CTA Section */}
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-brand-900/20 to-brand-950/20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-6">
-            Ready to Work With Us?
-          </h2>
-          <p className="text-lg text-brand-600/90 mb-8">
-            Let&apos;s discuss how we can help transform your business with innovative software solutions.
-          </p>
+          <GlassCard variant="section" className="mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-6">
+              Ready to Work With Us?
+            </h2>
+            <p className="text-lg text-brand-600/90 mb-8">
+              Let&apos;s discuss how we can help transform your business with innovative software solutions.
+            </p>
+          </GlassCard>
           <a 
             href="/contact" 
             className="inline-flex items-center bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl"
