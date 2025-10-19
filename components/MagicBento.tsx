@@ -31,12 +31,12 @@ export interface BentoProps {
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
-const DEFAULT_GLOW_COLOR = 'var(--color-glow-rgb)';
+const DEFAULT_GLOW_COLOR = 'var(--primary)';
 const MOBILE_BREAKPOINT = 768;
 
 const cardData: BentoCardProps[] = [
   {
-    color: 'var(--color-background-dark)',
+    color: 'var(--card)',
     title: 'POS Solutions',
     description: 'Enhance retail operations with custom, intelligent point-of-sale systems tailored to your business.',
     label: 'Retail',
@@ -44,7 +44,7 @@ const cardData: BentoCardProps[] = [
     size: 'large'
   },
   {
-    color: 'var(--color-background-dark)',
+    color: 'var(--card)',
     title: 'Business Automations',
     description: 'Streamline operations and boost productivity with smart, effortless automation solutions.',
     label: 'Efficiency',
@@ -52,7 +52,7 @@ const cardData: BentoCardProps[] = [
     size: 'small'
   },
   {
-    color: 'var(--color-background-dark)',
+    color: 'var(--card)',
     title: 'Project Management',
     description: 'Coordinate teams and track progress with comprehensive project management tools.',
     label: 'Organization',
@@ -60,7 +60,7 @@ const cardData: BentoCardProps[] = [
     size: 'small'
   },
   {
-    color: 'var(--color-background-dark)',
+    color: 'var(--card)',
     title: 'Cloud & DevOps',
     description: 'Optimize your infrastructure with scalable cloud solutions and efficient DevOps practices.',
     label: 'Infrastructure',
@@ -68,7 +68,7 @@ const cardData: BentoCardProps[] = [
     size: 'small'
   },
   {
-    color: 'var(--color-background-dark)',
+    color: 'var(--card)',
     title: 'Web Development',
     description: 'Create powerful, responsive web applications with modern technologies and frameworks.',
     label: 'Development',
@@ -76,7 +76,7 @@ const cardData: BentoCardProps[] = [
     size: 'large'
   },
   {
-    color: 'var(--color-background-dark)',
+    color: 'var(--card)',
     title: 'Graphics Design',
     description: 'Craft intuitive, engaging user experiences with creative and functional design solutions.',
     label: 'Design',
@@ -569,14 +569,14 @@ const MagicBento: React.FC<BentoProps> = ({
             --glow-intensity: 0;
             --glow-radius: 200px;
             --glow-color: ${glowColor};
-            --border-color: var(--color-border);
-            --border-color-rgba: var(--color-border-rgba);
-            --shadow-color: var(--color-shadow);
-            --background-dark: var(--color-background-dark);
-            --white: var(--color-foreground);
-            --purple-primary: var(--color-brand-500);
-            --purple-glow: var(--color-brand-500);
-            --purple-border: var(--color-brand-500);
+            --border-color: var(--border);
+            --border-color-rgba: var(--border);
+            --shadow-color: var(--shadow-color);
+            --background-dark: var(--card);
+            --white: var(--foreground);
+            --purple-primary: var(--primary);
+            --purple-glow: var(--primary);
+            --purple-border: var(--primary);
           }
           
           .card-responsive {
@@ -736,7 +736,7 @@ const MagicBento: React.FC<BentoProps> = ({
             const cardStyle = {
               backgroundColor: 'rgba(255, 255, 255, 0.8)',
               borderColor: 'rgba(255, 255, 255, 0.2)',
-              color: 'var(--color-foreground)',
+              color: 'var(--foreground)',
               '--glow-x': '50%',
               '--glow-y': '50%',
               '--glow-intensity': '0',

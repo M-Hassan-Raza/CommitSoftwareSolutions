@@ -12,47 +12,47 @@ export default function GraphicsDesign() {
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Our Design Services
             </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Creative design solutions that make your brand stand out
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-design-400 to-design-500 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/20 hover:border-border/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">UI/UX Design</h3>
-              <p className="text-brand-600/90">
+              <h3 className="text-xl font-semibold text-foreground mb-3">UI/UX Design</h3>
+              <p className="text-muted-foreground">
                 User-centered design that creates intuitive and engaging digital experiences.
               </p>
             </div>
             
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-design-400 to-design-500 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/20 hover:border-border/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">Brand Identity</h3>
-              <p className="text-brand-600/90">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Brand Identity</h3>
+              <p className="text-muted-foreground">
                 Complete brand identity design including logos, color schemes, and style guides.
               </p>
             </div>
             
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-design-400 to-design-500 rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border/20 hover:border-border/30 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-primary-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">Print Design</h3>
-              <p className="text-brand-600/90">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Print Design</h3>
+              <p className="text-muted-foreground">
                 Professional print materials including business cards, brochures, and marketing collateral.
               </p>
             </div>
@@ -61,64 +61,64 @@ export default function GraphicsDesign() {
       </section>
 
       {/* Benefits Section */}
-      <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-design-900/20 to-design-950/20">
+      <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-muted/20 to-muted/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-600 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Why Choose Our Design Services
             </h2>
-            <p className="text-lg text-brand-600/90 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Experience the power of design that converts and engages
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-brand-600 mb-6">Design That Works</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6">Design That Works</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-design-400 rounded-full flex items-center justify-center mr-3 mt-1">
-                    <svg className="w-3 h-3 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                    <svg className="w-3 h-3 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-brand-600/90">User-centered design approach for better engagement</span>
+                  <span className="text-muted-foreground">User-centered design approach for better engagement</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-design-400 rounded-full flex items-center justify-center mr-3 mt-1">
-                    <svg className="w-3 h-3 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                    <svg className="w-3 h-3 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-brand-600/90">Modern, clean aesthetics that build trust</span>
+                  <span className="text-muted-foreground">Modern, clean aesthetics that build trust</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-design-400 rounded-full flex items-center justify-center mr-3 mt-1">
-                    <svg className="w-3 h-3 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                    <svg className="w-3 h-3 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-brand-600/90">Consistent brand identity across all touchpoints</span>
+                  <span className="text-muted-foreground">Consistent brand identity across all touchpoints</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-design-400 rounded-full flex items-center justify-center mr-3 mt-1">
-                    <svg className="w-3 h-3 text-brand-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-3 mt-1">
+                    <svg className="w-3 h-3 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span className="text-brand-600/90">Mobile-first responsive design principles</span>
+                  <span className="text-muted-foreground">Mobile-first responsive design principles</span>
                 </li>
               </ul>
             </div>
             
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
-              <h4 className="text-xl font-semibold text-brand-600 mb-4">Ready to Design?</h4>
-              <p className="text-brand-600/90 mb-6">
+            <div className="bg-card/5 backdrop-blur-sm rounded-xl p-8 border border-border/10">
+              <h4 className="text-xl font-semibold text-foreground mb-4">Ready to Design?</h4>
+              <p className="text-muted-foreground mb-6">
                 Let&apos;s create designs that make your brand unforgettable.
               </p>
               <a 
                 href="/contact" 
-                className="inline-flex items-center bg-white text-neutral-900 px-6 py-3 rounded-full font-semibold hover:bg-neutral-100 transition-colors duration-200"
+                className="inline-flex items-center bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity duration-200"
               >
                 Start Designing
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
