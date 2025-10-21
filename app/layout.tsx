@@ -18,19 +18,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${companyName} Solutions`,
-  description: "Professional software development services including business automation, cloud solutions, web development, graphics design, and POS systems.",
+  title: `${companyName} - AI-Powered Software Solutions`,
+  description: "Build intelligent software with LangChain, LangGraph, and RAG systems. Polaris ERP processes 6.8M PKR monthly. Agentic workflows that traditional programming cannot achieve.",
+  keywords: ["AI automation", "LangChain", "LangGraph", "RAG systems", "Polaris ERP", "agentic workflows", "business automation", "cloud solutions", "GCP", "AWS Health Lake"],
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: `${companyName} Solutions`,
-    description: "Professional software development services.",
+    title: `${companyName} - AI-Powered Software Solutions`,
+    description: "Build intelligent software with LangChain, LangGraph, and RAG systems. Polaris ERP processes 6.8M PKR monthly.",
     siteName: legalName,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${companyName} Solutions`,
-    description: "Professional software development services.",
+    title: `${companyName} - AI-Powered Software Solutions`,
+    description: "Build intelligent software with LangChain, LangGraph, and RAG systems. Polaris ERP processes 6.8M PKR monthly.",
   },
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },

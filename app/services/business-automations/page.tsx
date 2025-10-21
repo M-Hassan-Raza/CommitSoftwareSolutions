@@ -5,8 +5,8 @@ export default function BusinessAutomations() {
   return (
     <div className="min-h-screen">
       <ServiceHero
-        title="Business Automations"
-        description="Streamline operations and boost productivity with smart, effortless automation solutions that work around the clock to optimize your business processes."
+        title="AI-Powered Business Automations"
+        description="Transform your business with intelligent agentic workflows using LangChain and LangGraph. Our cutting-edge AI automation goes beyond traditional programming to deliver results that actually work."
       />
       
       {/* Features Section */}
@@ -27,12 +27,12 @@ export default function BusinessAutomations() {
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-gradient-to-br from-business-400 to-accent-400 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">Workflow Automation</h3>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">Agentic Workflows</h3>
               <p className="text-brand-600/90">
-                Automate repetitive tasks and complex workflows to reduce manual effort and human error.
+                Build intelligent, autonomous workflows using LangChain and LangGraph that can reason, plan, and execute complex tasks with minimal human intervention.
               </p>
             </div>
             
@@ -42,21 +42,21 @@ export default function BusinessAutomations() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">Data Processing</h3>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">RAG-Powered Intelligence</h3>
               <p className="text-brand-600/90">
-                Intelligent data processing and analysis to extract valuable insights from your business data.
+                Implement Retrieval-Augmented Generation systems that can query your data in natural language and provide intelligent insights and responses.
               </p>
             </div>
             
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-gradient-to-br from-business-400 to-accent-400 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">Mobile Integration</h3>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">LLM Integration</h3>
               <p className="text-brand-600/90">
-                Seamless integration with mobile devices and apps for on-the-go business management.
+                Seamlessly integrate Large Language Models with your existing systems for natural language processing, decision making, and intelligent automation.
               </p>
             </div>
           </div>

@@ -81,6 +81,12 @@ export default function Navbar() {
                   Testimonials
                 </Link>
                 <Link
+                  href="/case-studies"
+                  className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
+                >
+                  Case Studies
+                </Link>
+                <Link
                   href="/blog"
                   className="text-foreground hover:text-primary transition-all duration-300 font-medium px-3 py-1 rounded-full hover:bg-card/20"
                 >
@@ -157,6 +163,12 @@ export default function Navbar() {
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 Testimonials
+              </Link>
+              <Link
+                href="/case-studies"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              >
+                Case Studies
               </Link>
               <Link
                 href="/blog"

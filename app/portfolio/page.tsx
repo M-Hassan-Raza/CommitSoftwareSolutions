@@ -7,7 +7,7 @@ export default function Portfolio() {
         title="Our Portfolio"
         description="Explore our successful projects and see how we've helped businesses transform their operations with innovative software solutions."
       />
-      
+
       {/* Filter Section */}
       <section className="relative z-10 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -30,169 +30,156 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-      
+
       {/* Portfolio Grid */}
       <section className="relative z-10 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project 1 */}
+            {/* Polaris ERP Project */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300 group">
-              <div className="h-48 bg-gradient-to-br from-web-400 to-web-500 flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <div className="text-center text-white">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  <svg
+                    className="w-16 h-16 mx-auto mb-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                    />
                   </svg>
-                  <p className="text-sm font-medium">E-Commerce Platform</p>
+                  <p className="text-sm font-medium">ERP & POS System</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="px-3 py-1 bg-web-100 text-web-600 rounded-full text-sm font-medium">Web Development</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                    AI-Powered ERP
+                  </span>
                   <span className="text-sm text-brand-600/70">2024</span>
                 </div>
-                <h3 className="text-xl font-semibold text-brand-600 mb-2">Modern E-Commerce Solution</h3>
+                <h3 className="text-xl font-semibold text-brand-600 mb-2">
+                  Polaris ERP
+                </h3>
                 <p className="text-brand-600/90 mb-4">
-                  Built a scalable e-commerce platform with advanced features including real-time inventory management, payment processing, and analytics dashboard.
+                  Complete ERP and POS solution with LangChain integration for
+                  natural language queries. Processes millions in transactions
+                  with AI-powered insights and fraud detection.
                 </p>
                 <div className="space-y-2 text-sm text-brand-600/80">
-                  <p><strong>Client:</strong> RetailTech Inc.</p>
-                  <p><strong>Duration:</strong> 4 months</p>
-                  <p><strong>Result:</strong> 300% increase in online sales</p>
+                  <p>
+                    <strong>Client:</strong> Rai Inam & Others
+                  </p>
+                  <p>
+                    <strong>Volume:</strong> 6.8M PKR/month
+                  </p>
+                  <p>
+                    <strong>Features:</strong> AI queries, fraud detection,
+                    real-time analytics
+                  </p>
                 </div>
               </div>
             </div>
-            
-            {/* Project 2 */}
+
+            {/* Bonnet.ai Project */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300 group">
               <div className="h-48 bg-gradient-to-br from-automation-400 to-automation-500 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  <svg
+                    className="w-16 h-16 mx-auto mb-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
                   </svg>
-                  <p className="text-sm font-medium">Workflow Automation</p>
+                  <p className="text-sm font-medium">AI Platform</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="px-3 py-1 bg-automation-100 text-automation-600 rounded-full text-sm font-medium">Business Automation</span>
+                  <span className="px-3 py-1 bg-automation-100 text-automation-600 rounded-full text-sm font-medium">
+                    AI/ML Solution
+                  </span>
                   <span className="text-sm text-brand-600/70">2024</span>
                 </div>
-                <h3 className="text-xl font-semibold text-brand-600 mb-2">HR Process Automation</h3>
+                <h3 className="text-xl font-semibold text-brand-600 mb-2">
+                  Bonnet.ai
+                </h3>
                 <p className="text-brand-600/90 mb-4">
-                  Automated HR workflows including employee onboarding, leave management, and performance reviews, reducing manual work by 80%.
+                  Advanced AI platform leveraging LangChain and LangGraph for
+                  intelligent automation. Built with agentic workflows and RAG
+                  systems for complex business intelligence.
                 </p>
                 <div className="space-y-2 text-sm text-brand-600/80">
-                  <p><strong>Client:</strong> GlobalCorp</p>
-                  <p><strong>Duration:</strong> 3 months</p>
-                  <p><strong>Result:</strong> 80% reduction in manual tasks</p>
+                  <p>
+                    <strong>Technology:</strong> LangChain, LangGraph, RAG
+                  </p>
+                  <p>
+                    <strong>Type:</strong> AI Automation Platform
+                  </p>
+                  <p>
+                    <strong>Features:</strong> Agentic workflows, intelligent
+                    automation
+                  </p>
                 </div>
               </div>
             </div>
-            
-            {/* Project 3 */}
+
+            {/* Future Project Placeholder */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300 group">
               <div className="h-48 bg-gradient-to-br from-cloud-400 to-cloud-500 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+                  <svg
+                    className="w-16 h-16 mx-auto mb-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                    />
                   </svg>
-                  <p className="text-sm font-medium">Cloud Migration</p>
+                  <p className="text-sm font-medium">Coming Soon</p>
                 </div>
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="px-3 py-1 bg-cloud-100 text-cloud-600 rounded-full text-sm font-medium">Cloud & DevOps</span>
+                  <span className="px-3 py-1 bg-cloud-100 text-cloud-600 rounded-full text-sm font-medium">
+                    In Development
+                  </span>
                   <span className="text-sm text-brand-600/70">2024</span>
                 </div>
-                <h3 className="text-xl font-semibold text-brand-600 mb-2">AWS Cloud Migration</h3>
+                <h3 className="text-xl font-semibold text-brand-600 mb-2">
+                  Next AI Project
+                </h3>
                 <p className="text-brand-600/90 mb-4">
-                  Migrated legacy infrastructure to AWS with zero downtime, implementing auto-scaling and monitoring solutions.
+                  Working on the next breakthrough in AI-powered business
+                  automation. More details coming soon as we push the boundaries
+                  of what&apos;s possible.
                 </p>
                 <div className="space-y-2 text-sm text-brand-600/80">
-                  <p><strong>Client:</strong> FinanceFlow</p>
-                  <p><strong>Duration:</strong> 6 months</p>
-                  <p><strong>Result:</strong> 60% cost reduction</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Project 4 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300 group">
-              <div className="h-48 bg-gradient-to-br from-pos-400 to-pos-500 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                  </svg>
-                  <p className="text-sm font-medium">POS System</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="px-3 py-1 bg-pos-100 text-pos-600 rounded-full text-sm font-medium">POS Solutions</span>
-                  <span className="text-sm text-brand-600/70">2023</span>
-                </div>
-                <h3 className="text-xl font-semibold text-brand-600 mb-2">Restaurant POS System</h3>
-                <p className="text-brand-600/90 mb-4">
-                  Custom POS solution for restaurant chain with inventory management, staff scheduling, and real-time analytics.
-                </p>
-                <div className="space-y-2 text-sm text-brand-600/80">
-                  <p><strong>Client:</strong> FoodChain Group</p>
-                  <p><strong>Duration:</strong> 5 months</p>
-                  <p><strong>Result:</strong> 25% increase in efficiency</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Project 5 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300 group">
-              <div className="h-48 bg-gradient-to-br from-design-400 to-design-500 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z" />
-                  </svg>
-                  <p className="text-sm font-medium">Brand Identity</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="px-3 py-1 bg-design-100 text-design-600 rounded-full text-sm font-medium">Graphics Design</span>
-                  <span className="text-sm text-brand-600/70">2023</span>
-                </div>
-                <h3 className="text-xl font-semibold text-brand-600 mb-2">Complete Brand Redesign</h3>
-                <p className="text-brand-600/90 mb-4">
-                  Complete visual identity overhaul including logo design, brand guidelines, and marketing materials for tech startup.
-                </p>
-                <div className="space-y-2 text-sm text-brand-600/80">
-                  <p><strong>Client:</strong> TechStart Inc.</p>
-                  <p><strong>Duration:</strong> 2 months</p>
-                  <p><strong>Result:</strong> 150% increase in brand recognition</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Project 6 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-brand-200/20 hover:border-brand-300/30 hover:shadow-lg transition-all duration-300 group">
-              <div className="h-48 bg-gradient-to-br from-web-400 to-web-500 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                  <p className="text-sm font-medium">Analytics Dashboard</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="px-3 py-1 bg-web-100 text-web-600 rounded-full text-sm font-medium">Web Development</span>
-                  <span className="text-sm text-brand-600/70">2023</span>
-                </div>
-                <h3 className="text-xl font-semibold text-brand-600 mb-2">Real-time Analytics Platform</h3>
-                <p className="text-brand-600/90 mb-4">
-                  Built comprehensive analytics dashboard with real-time data visualization and custom reporting features.
-                </p>
-                <div className="space-y-2 text-sm text-brand-600/80">
-                  <p><strong>Client:</strong> DataCorp</p>
-                  <p><strong>Duration:</strong> 4 months</p>
-                  <p><strong>Result:</strong> 90% faster decision making</p>
+                  <p>
+                    <strong>Status:</strong> In Development
+                  </p>
+                  <p>
+                    <strong>Focus:</strong> Advanced AI Workflows
+                  </p>
+                  <p>
+                    <strong>Tech:</strong> Cutting-edge AI frameworks
+                  </p>
                 </div>
               </div>
             </div>
@@ -207,15 +194,26 @@ export default function Portfolio() {
             Ready to Start Your Project?
           </h2>
           <p className="text-lg text-brand-600/90 mb-8">
-            Let&apos;s create something amazing together. Get in touch to discuss your project requirements.
+            Let&apos;s create something amazing together. Get in touch to
+            discuss your project requirements.
           </p>
-          <a 
-            href="/contact" 
+          <a
+            href="/contact"
             className="inline-flex items-center bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity duration-200 shadow-lg hover:shadow-xl"
           >
             Start Your Project
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg
+              className="ml-2 w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </a>
         </div>

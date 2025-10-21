@@ -6,7 +6,7 @@ export default function CloudDevOps() {
     <div className="min-h-screen">
       <ServiceHero
         title="Cloud & DevOps"
-        description="Optimize your infrastructure with scalable cloud solutions and efficient DevOps practices that ensure reliability, security, and performance."
+        description="Deploy and scale your AI-powered applications with GCP, AWS Health Lake, and Keepa Command Services. Flexible deployment options from on-premise to hosted SaaS."
       />
       
       {/* Features Section */}
@@ -30,9 +30,9 @@ export default function CloudDevOps() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">Cloud Migration</h3>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">GCP & AWS Expertise</h3>
               <p className="text-brand-600/90">
-                Seamless migration to cloud platforms with zero downtime and enhanced security.
+                Deep experience with Google Cloud Platform, AWS Health Lake, and Keepa Command Services for AI-powered applications.
               </p>
             </div>
             
@@ -43,9 +43,9 @@ export default function CloudDevOps() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-600 mb-3">CI/CD Pipeline</h3>
+              <h3 className="text-xl font-semibold text-brand-600 mb-3">Flexible Deployment</h3>
               <p className="text-brand-600/90">
-                Automated deployment pipelines for faster, more reliable software delivery.
+                Deploy on-premise, hosted SaaS, or hybrid solutions. Polaris ERP can be deployed in minutes, not months.
               </p>
             </div>
             

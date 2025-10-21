@@ -11,12 +11,13 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="mb-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Where Artificial Intelligence Meets Real Impact
+            AI-Powered Software That Actually Works
           </h1>
           <p className="mt-4 text-base sm:text-lg text-muted-foreground">
-            We design, build, and scale reliable software that reduces
-            operational drag, improves conversion, and automates the busywork—so
-            your team can focus on growth.
+            We build intelligent software using cutting-edge AI frameworks like
+            LangChain and LangGraph. Our agentic workflows and RAG systems
+            automate complex business processes that traditional programming
+            simply can&apos;t handle—delivering real results, not just promises.
           </p>
         </div>
 
