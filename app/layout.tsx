@@ -44,22 +44,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: legalName,
+              url: siteUrl,
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <head>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                name: legalName,
-                url: siteUrl,
-              }),
-            }}
-          />
-        </head>
         {/* Background */}
         <div className="fixed inset-0 z-0">
           <PixelBlast

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import TextPressure from "./TextPressure";
 
 export default function Hero() {
   return (
@@ -9,15 +10,24 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <div className="mb-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            AI-Powered Software That Actually Works
-          </h1>
-          <p className="mt-4 text-base sm:text-lg text-muted-foreground">
-            We build intelligent software using cutting-edge AI frameworks like
-            LangChain and LangGraph. Our agentic workflows and RAG systems
-            automate complex business processes that traditional programming
-            simply can&apos;t handle—delivering real results, not just promises.
+        <div >
+          <div style={{position: 'relative', height: '200px'}}>
+            <TextPressure
+              text="AI-Powered Software That Actually Works"
+              flex={true}
+              alpha={false}
+              stroke={false}
+              width={true}
+              weight={true}
+              italic={true}
+              textColor="#000000"
+              strokeColor="#ff0000"
+              minFontSize={60}
+            />
+          </div>
+          <p className="text-base sm:text-lg text-muted-foreground -mt-8">
+          We build intelligent systems that learn, adapt, and evolve. Our AI automates the hard parts of business, turning complex processes into smooth, self-running operations that drive real impact.
+
           </p>
         </div>
 

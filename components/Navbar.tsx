@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,11 +36,15 @@ export default function Navbar() {
             {/* Content */}
             <div className="relative flex items-center space-x-8">
               {/* Logo - smaller in pill */}
-              <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                  <div className="w-3 h-3 bg-primary-foreground rounded-sm"></div>
-                </div>
-                <span className="text-foreground font-bold text-lg">Commit Software</span>
+              <div className="flex items-center">
+                <Image
+                  src="/logo.png"
+                  alt="Commit Software"
+                  width={120}
+                  height={24}
+                  className="h-6 w-auto"
+                  priority
+                />
               </div>
 
               {/* Navigation Links */}
@@ -119,11 +124,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex items-center justify-between h-full">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-                <div className="w-4 h-4 bg-primary-foreground rounded-md"></div>
-              </div>
-              <span className="text-foreground font-bold text-xl">Commit Software</span>
+            <div className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Commit Software"
+                width={160}
+                height={32}
+                className="h-8 w-auto"
+                priority
+              />
             </div>
 
             {/* Navigation Links */}
