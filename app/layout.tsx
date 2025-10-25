@@ -56,6 +56,7 @@ export default function RootLayout({
             }),
           }}
         />
+        <meta name="Commit Software" content="Commit Software" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

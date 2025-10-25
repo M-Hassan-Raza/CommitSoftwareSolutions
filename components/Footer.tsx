@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { contactEmail, contactPhone, addressCity, addressRegion, addressPostalCode, linkedinUrl } from '../lib/company';
 
 export default function Footer() {
@@ -13,14 +14,15 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 rounded-xl flex items-center justify-center bg-gradient-to-br from-primary to-secondary">
-                  <div className="w-4 h-4 rounded-md bg-primary-foreground"></div>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground">
-                  <span>Commit</span>
-                  <span className="text-muted-foreground">Software</span>
-                </h3>
+              <div className="flex items-center">
+                <Image
+                  src="/logo.png"
+                  alt="Commit Software"
+                  width={120}
+                  height={24}
+                  className="h-6 w-auto"
+                  priority
+                />
               </div>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Delivering innovative software solutions and digital services to help businesses thrive in the modern world.
