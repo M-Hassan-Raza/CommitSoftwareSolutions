@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PixelBlast from "../components/PixelBlast";
+import ConsoleBrand from "../components/shared/console-brand";
 import { companyName, legalName, siteUrl } from "../lib/company";
 
 const geistSans = Geist({
@@ -61,6 +62,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ConsoleBrand />
         {/* Background */}
         <div className="fixed inset-0 z-0">
           <PixelBlast
